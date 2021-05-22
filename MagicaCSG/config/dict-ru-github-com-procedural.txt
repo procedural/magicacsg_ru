@@ -433,7 +433,7 @@ Dict
 "Show Brush Gizmo : Commit [Enter] : Cancel [Esc] : Two-sided [+SHIFT]"=""
 "Show Brushes"=""
 "Show Camera Control"=""
-"Show Camera Ruler : Drag on Ruler [LButton]"="Показать линейки камеры: удерживая кнопку мыши на линейках [Левая кнопка мыши]"
+"Show Camera Ruler : Drag on Ruler [LButton]"="Показать линейки камеры [удерживая Левую кнопку мыши на линейках]"
 "Show Camera Settings"=""
 "Show Comparison"=""
 "Show Denoised Image [Right]"=""
