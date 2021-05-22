@@ -13,9 +13,9 @@ hbox ::
 		}
 	}
 
-	textfield(def = 'tf-name' id = 'name' onEnter = 'name' default = 'project')
+	textfield(def = 'tf-name' id = 'name' onEnter = 'name' default = 'проект')
 	(corner = '15' radius = '6' flex = '1')
-	(hint = 'Rename Project')
+	(hint = 'Переименовать проект')
 
 	hbox( size = '264.33' align = '1' margin = '0 0 3 3') ::
 	{
