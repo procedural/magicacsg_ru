@@ -1,0 +1,169 @@
+vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
+{
+	vbox ::
+	{
+		
+		
+		sp(def = 'bg2' size = '3')
+
+		hbox(size = '24')::
+		{
+			switch(def = 'op-blue' id = 's_half_x'	onClick = 'sset s_half 0' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hx')(flex = '1')(hint = 'Half X')
+			switch(def = 'op-blue' id = 's_half_y'	onClick = 'sset s_half 1' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hy')(flex = '1')(hint = 'Half Y')
+			switch(def = 'op-blue' id = 's_half_z'	onClick = 'sset s_half 2' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hz')(flex = '1')(hint = 'Half Z')
+			switch(def = 'op-blue' id = 's_mx'	    onClick = 'sset s_mx'     textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'M' )(flex = '1')(hint = 'Mirror X')
+		}
+		
+		sp(def = 'bar-h' size = '3')
+
+		//----------------
+		// Type
+		//----------------
+		opBox(class = 'tab' id = 's_type' value = 'sphere' margin = '0 0 0 0')(hint = 'Stroke Shape : Duplicate [SHIFT+Drag]') ::
+		{																									
+			hbox ::
+			{
+				vbox(def = 'op-brush' flex = '1') ::
+				{					
+					option(def = 'op-blue' id = 'sphere' 	select_value = [[]]					text = 'Sphere'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type sphere')
+					option(def = 'op-blue' id = 'triangle' 	select_value = [['v_prism' 'v_cone' 'v_top_v' 'v_torus']]		text = 'Triangle'	textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type triangle')
+					option(def = 'op-blue' id = 'joint'		select_value = [['v_cone']]					text = 'Joint'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type joint')
+				}															
+				vbox(def = 'op-brush' flex = '1') ::						
+				{															
+					option(def = 'op-blue' id = 'cube' 		select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Cube'	    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cube')
+					option(def = 'op-blue' id = 'polygon' 	select_value = [['v_prism' 'v_cone' 's_n' 'v_torus']]	text = 'Polygon'    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type polygon')
+					option(def = 'op-blue' id = 'cylinder' 	select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Cylinder'   textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cylinder')
+				}																			
+			}
+		}
+
+		sp(def = 'bar-h' size = '3')
+	
+		vbox(margin = '0 0 0 0') ::
+		{
+			opBox(id = 's_boolean' onClick = 'sset s_boolean' index = '0') ::
+			{
+				vbox ::
+				{
+					hbox(size = '22') ::
+					{
+						option(def = 'op-blue' id = '0'	text = 'Union'    textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Union Operation')
+						option(def = 'op-blue' id = '1'	text = 'Subtract' textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Subtract Operation')
+					}
+					hbox(size = '22') ::
+					{
+						option(def = 'op-blue' id = '2'	text = 'Inter'  textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Intersect Operation')
+						option(def = 'op-blue' id = '3'	text = 'Replace'	textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Replace Operation')
+					}
+				}
+			}
+		}
+
+		sp(def = 'bar-h' size = '3')
+	}		
+	
+	opBox(id = 's_n' onClick = 'sset s_n' index = '0')(size = '24' margin = '-3 3 0 0' prev = '3' hidden = '1')(hint = 'Polygon Side') ::
+	{
+		hbox::
+		{
+			label(def = 'h3' text = 'Side')(flex = '1')
+			option(def = 'op-blue' id = '3'	textFont = 'std' text = '3' textAlign = '3' textSize = '6.5 6.5')(size = '12')
+			option(def = 'op-blue' id = '4'	textFont = 'std' text = '4' textAlign = '3' textSize = '6.5 6.5')(size = '12')
+			option(def = 'op-blue' id = '5'	textFont = 'std' text = '5' textAlign = '3' textSize = '6.5 6.5')(size = '12')
+			option(def = 'op-blue' id = '6'	textFont = 'std' text = '6' textAlign = '3' textSize = '6.5 6.5')(size = '12')
+			option(def = 'op-blue' id = '8'	textFont = 'std' text = '8' textAlign = '3' textSize = '6.5 6.5')(size = '12')
+		}
+	}
+	
+	vbox(margin = '-3 3 0 0') ::
+	{
+		hbox(size = '32') ::
+		{
+			label(def = 'h3' text = 'Color')(size = '34')
+			button(def = 'bn-ic' textFont = 'icon' text = '^12'  textAlign = '2' textSize = '13 13' onClick = 'sel color'  size = '20' margin = '0 0 6 6')(hint = 'Select Strokes with Same Color [C]')
+			button(def = 'bn-ic' textFont = 'icon' text = '^106' textAlign = '2' textSize = '13 13' onClick = 'sset s_pal' size = '20' margin = '0 0 6 6')(hint = 'Pick Stroke Color from Palette [P]')
+			sp(flex = '1')
+			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Stroke Color : Pick Color from Other Strokes [ALT+Click]')
+		}
+	
+		vbox(hint = 'Blend Radius' prev = '10') ::
+		{
+			hbox(size = '15') ::
+			{
+				label(def = 'h3' text = 'Blend')(flex = '1')
+				textField(def = 'tf-sub' id = 's_blend' onEnter = 'sset s_blend')(size = '35')
+			}
+			slider(def = 'sl-mtl' id = 's_blend_sl' onChange = 'sset s_blend' range = '0 128')(size = '22')
+		}
+	
+		vbox(hint = 'Shell [XYZ]') ::
+		{
+			hbox(size = '15') ::
+			{
+				label(def = 'h3' text = 'Shell')(flex = '1')
+				textField(def = 'tf-sub' id = 's_shell' onEnter = 'sset s_shell')(size = '35')
+			}
+			slider(def = 'sl-mtl' id = 's_shell_sl' onChange = 'sset s_shell')(size = '22')
+		}
+			
+		vbox(id = 'v_prism' hidden = '1') ::
+		{
+			vbox(hint = 'Hole [XY]') ::
+			{
+				hbox(size = '15') ::
+				{
+					label(def = 'h3' text = 'Hole')(flex = '1')
+					textField(def = 'tf-sub' id = 's_hole' onEnter = 'sset s_hole')(size = '35')
+				}
+				slider(def = 'sl-mtl' id = 's_hole_sl' onChange = 'sset s_hole')(size = '22')
+			}
+		
+			vbox(hint = 'Bevel [XY]') ::
+			{
+				hbox(size = '15') ::
+				{
+					label(def = 'h3' text = 'Bevel')(flex = '1')
+					textField(def = 'tf-sub' id = 's_bevel' onEnter = 'sset s_bevel')(size = '35')
+				}
+				slider(def = 'sl-mtl' id = 's_bevel_sl' onChange = 'sset s_bevel')(size = '22')
+			}
+		
+			vbox(hint = 'Round [XYZ]') ::
+			{
+				hbox(size = '15') ::
+				{
+					label(def = 'h3' text = 'Round')(flex = '1')
+					textField(def = 'tf-sub' id = 's_round' onEnter = 'sset s_round')(size = '35')
+				}
+				slider(def = 'sl-mtl' id = 's_round_sl' onChange = 'sset s_round')(size = '22')
+			}
+		}
+
+		vbox(id = 'v_cone' hint = 'Cone [Z]' hidden = '1') ::
+		{
+			hbox(size = '15') ::
+			{
+				label(def = 'h3' text = 'Cone')(flex = '1')
+				textField(def = 'tf-sub' id = 's_cone' onEnter = 'sset s_cone')(size = '35')
+			}
+			slider(def = 'sl-mtl' id = 's_cone_sl' onChange = 'sset s_cone')(size = '22')
+		}
+
+		vbox(id = 'v_top_v' hint = 'Top Vertex' hidden = '1') ::
+		{
+			hbox(size = '15') ::
+			{
+				label(def = 'h3' text = 'Top')(flex = '1')
+				textField(def = 'tf-sub' id = 's_top_v' onEnter = 'sset s_top_v')(size = '35')
+			}
+			slider(def = 'sl-mtl' id = 's_top_v_sl' onChange = 'sset s_top_v' range = '-100 100')(size = '22')
+		}
+		
+		hbox(id = 'v_torus' hidden = '1')(size = '22')(hint = 'Torus Mode' prev = '6') ::
+		{
+			label(def = 'h3' text = 'Torus')(flex = '1' next = '3')
+			switch(def = 'sw-check' id = 's_torus' onClick = 'sset s_torus' selected = '1')(size = '6')
+		}
+	}
+}
