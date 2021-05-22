@@ -494,7 +494,7 @@ Dict
 "Threshold"=""
 "Toggle Bloom Calculation"=""
 "Toggle Note"=""
-"Toggle Panel"=""
+"Toggle Panel"="Показать панель"
 "Toggle Progressive Rendering"=""
 "Tool"=""
 "Transform"=""

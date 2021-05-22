@@ -16,7 +16,7 @@ vbox(def = 'bg2' corner = '12' radius = '2') ::
 
 			hbox ::
 			{
-				button(def = 'bn-ic' onClick = 'snew' textFont = 'icon' text = '^10' textAlign = '2' textSize = '12 12')(size = '22' corner = '4' next = '1')(hint = 'Создать Элемент [Ctrl + Т]')
+				button(def = 'bn-ic' onClick = 'snew' textFont = 'icon' text = '^10' textAlign = '2' textSize = '12 12')(size = '22' corner = '4' next = '1')(hint = 'Добавить Элемент [Ctrl + Т]')
 				button(def = 'bn-ic' onClick = 'sdel' textFont = 'icon' text = '^11' textAlign = '2' textSize = '12 12')(size = '22' corner = '0')(hint = 'Удалить Элемент [Delete или Backspace кнопки клавиатуры]')
 			}
 
