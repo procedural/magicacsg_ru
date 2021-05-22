@@ -54,7 +54,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 					hbox(size = '22') ::
 					{
 						option(def = 'op-blue' id = '2'	text = 'Пересечение'  textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Булева операция пересечения (если А и Б)')
-						option(def = 'op-blue' id = '3'	text = 'Спрятать'	textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Спрятать элемент')
+						option(def = 'op-blue' id = '3'	text = 'Исключить'	textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Булева операция исключения')
 					}
 				}
 			}
