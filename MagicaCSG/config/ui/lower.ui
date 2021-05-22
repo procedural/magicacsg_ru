@@ -131,9 +131,9 @@ vbox(def = 'bg2') ::
 									{
 										vbox(id = 'p_hdq')(flex = '1') ::
 										{
-											slider(class = 'col')(id = '_r' range = '0 255')(flex = '1' next = '1')(hint = 'Red')
-											slider(class = 'col')(id = '_g' range = '0 255')(flex = '1' next = '1')(hint = 'Green')
-											slider(class = 'col')(id = '_b' range = '0 255')(flex = '1')(hint = 'Blue')
+											slider(class = 'col')(id = '_r' range = '0 255')(flex = '1' next = '1')(hint = 'Красный')
+											slider(class = 'col')(id = '_g' range = '0 255')(flex = '1' next = '1')(hint = 'Зелёный')
+											slider(class = 'col')(id = '_b' range = '0 255')(flex = '1')(hint = 'Синий')
 										}
 										vbox(id = 'p_t_rgb' size = '24' hidden = '1') ::
 										{
