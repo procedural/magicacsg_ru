@@ -362,7 +362,7 @@ Dict
 "Remove All Invisible Voxels"=""
 "Remove Project to Trash"=""
 "Rename Project"=""
-"Render"=""
+"Render"="Рендер"
 "Render Setting"=""
 "Render [F1]"=""
 "Replace"=""
