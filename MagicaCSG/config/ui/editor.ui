@@ -273,7 +273,7 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 									sp(def = 'bar-v' size = '4')
 									vbox(flex = '1') ::
 									{
-										switch(class = 'view')(def = 'sw-title' text = 'Stroke' view = [['v2' 'v2_s']])(size = '25' next = '4')
+										switch(class = 'view')(def = 'sw-title' text = 'Элемент' view = [['v2' 'v2_s']])(size = '25' next = '4')
 										/*opBox(class = 'tab')(id = 'left_mtab' hidden = '1' def = 'outline' index = '1')(size = '27' margin = '9 9 0 0' next = '3') ::
 										{
 											hbox(def = 'outline-i') ::
