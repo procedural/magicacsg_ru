@@ -5,7 +5,7 @@ vbox(def = 'bg2') ::
 		switch(class = 'view')(def = 'sw-view' style = '2' view = [['v_lower']] selected = '0')
 		(text = '^9660' text2 = '^9650' textFont = 'symbol' textSize = '11 11')
 		(size = '24' prev = '3' next = '3' margin = '0 0 2 2')
-		(hint = 'Show Palette')
+		(hint = 'Показать палитру')
 
 		button(def = 'bn-ic' onClick = 'snap scene')
 		(text = '^8' textOffset = '0 1' textSize = '19 19')
