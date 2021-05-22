@@ -5,41 +5,41 @@ vbox(def = 'bg2' corner = '12' radius = '2') ::
 		hbox(id = 'top_edit' flex = '1') ::
 		{
 			/*opBox(id = 'edit_level' onClick = 'set edit_level' value = '1' prev = '3' hidden = '1') ::
-			{																									
+			{
 				hbox(def = 'op-brush') ::
-				{					
+				{
 					option(def = 'op-blue' id = '0'	text = 'Object' textAlign = '1' textSize = '6 6')(size = '40')
 					option(def = 'op-blue' id = '1'	text = 'Stroke'	textAlign = '1' textSize = '6 6')(size = '40')
 					option(def = 'op-blue' id = '2'	text = 'Control' textAlign = '1' textSize = '6 6')(size = '40')
 				}
 			}*/
-			
+
 			hbox ::
 			{
 				button(def = 'bn-ic' onClick = 'snew' textFont = 'icon' text = '^10' textAlign = '2' textSize = '12 12')(size = '22' corner = '4' next = '1')(hint = 'Add Stroke [CTRL+N]')
 				button(def = 'bn-ic' onClick = 'sdel' textFont = 'icon' text = '^11' textAlign = '2' textSize = '12 12')(size = '22' corner = '0')(hint = 'Delete Stroke [Delete/Backspace]')
 			}
-	
+
 			sp(flex = '1')
-			
+
 			opBox(id = 'xform_space' onClick = 'set xform_space' value = 'local' next = '3') ::
-			{																									
+			{
 				hbox(def = 'op-brush') ::
-				{					
+				{
 					option(def = 'op-blue' id = 'local'		text = 'Local'	textAlign = '1' textSize = '7.5 7.5')(size = '45')(hint = 'Local Space [F]')
 					option(def = 'op-blue' id = 'global'	text = 'Global' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Global Space [G]')
 					option(def = 'op-blue' id = 'screen'	text = 'Screen' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Screen Space [H]')
 				}
 			}
 		}
-		
+
 		hbox(id = 'top_render' hidden = '1' flex = '1') ::
 		{
 			switch(def = 'sw-play' onClick = 'set pt_auto' selected = '1')
 			(corner = '12' radius = '2' size = '32')
 			(hint = 'Toggle Progressive Rendering')
 
-			sp(flex = '1')	
+			sp(flex = '1')
 
 			label(def = 'h3' text = '^57' textFont = 'icon' textSize = '20 20')
 			(size = '26' next = '5')
@@ -56,7 +56,7 @@ vbox(def = 'bg2' corner = '12' radius = '2') ::
 			textField(def = 'tf-size' id = 'pt_spp' onEnter = 'set pt_spp' default = 'sample' maxLength = '7')
 			(size = '100')
 			(hint = 'Samples Per Pixel')
-			
+
 			resizer(axis = '0' class = 'int')(range = '512 100000' step = '10')(size = '8' next = '3' margin = '0 0 0 0')
 		}
 	}
