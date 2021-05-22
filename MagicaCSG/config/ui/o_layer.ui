@@ -48,13 +48,13 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 				{
 					hbox(size = '22') ::
 					{
-						option(def = 'op-blue' id = '0'	text = 'Union'    textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Union Operation')
-						option(def = 'op-blue' id = '1'	text = 'Subtract' textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Subtract Operation')
+						option(def = 'op-blue' id = '0'	text = 'Объединение'    textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Булева операция объединения (если А или Б)')
+						option(def = 'op-blue' id = '1'	text = 'Вычитание' textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Булева операция вычитания (если А без Б)')
 					}
 					hbox(size = '22') ::
 					{
-						option(def = 'op-blue' id = '2'	text = 'Inter'  textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Intersect Operation')
-						option(def = 'op-blue' id = '3'	text = 'Replace'	textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Replace Operation')
+						option(def = 'op-blue' id = '2'	text = 'Пересечение'  textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Булева операция пересечения (если А и Б)')
+						option(def = 'op-blue' id = '3'	text = 'Спрятать'	textAlign = '1' textSize = '6 6')(flex = '1')(hint = 'Спрятать элемент')
 					}
 				}
 			}
