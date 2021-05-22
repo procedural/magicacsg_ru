@@ -8,10 +8,10 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 
 		hbox(size = '24')::
 		{
-			switch(def = 'op-blue' id = 's_half_x'	onClick = 'sset s_half 0' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hx')(flex = '1')(hint = 'Half X')
-			switch(def = 'op-blue' id = 's_half_y'	onClick = 'sset s_half 1' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hy')(flex = '1')(hint = 'Half Y')
-			switch(def = 'op-blue' id = 's_half_z'	onClick = 'sset s_half 2' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Hz')(flex = '1')(hint = 'Half Z')
-			switch(def = 'op-blue' id = 's_mx'	    onClick = 'sset s_mx'     textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'M' )(flex = '1')(hint = 'Mirror X')
+			switch(def = 'op-blue' id = 's_half_x'	onClick = 'sset s_half 0' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Пx')(flex = '1')(hint = 'Половина элемента по оси X (красная ось)')
+			switch(def = 'op-blue' id = 's_half_y'	onClick = 'sset s_half 1' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Пy')(flex = '1')(hint = 'Половина элемента по оси Y (зелёная ось)')
+			switch(def = 'op-blue' id = 's_half_z'	onClick = 'sset s_half 2' textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'Пz')(flex = '1')(hint = 'Половина элемента по оси Z (синяя ось)')
+			switch(def = 'op-blue' id = 's_mx'	    onClick = 'sset s_mx'     textFont = 'std' textAlign = '1' textColor-s = '235 195 60' text = 'О' )(flex = '1')(hint = 'Отражение элемента по оси X (красная ось)')
 		}
 
 		sp(def = 'bar-h' size = '3')
