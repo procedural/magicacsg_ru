@@ -344,7 +344,7 @@ Dict
 "Random Voxel Colors"=""
 "Rayleigh Color"=""
 "Rayleigh Density"=""
-"Recenter Camera [5] : Face View [CTRL+5]"=""
+"Recenter Camera [5] : Face View [CTRL+5]"="Центрировать камеру [5] : Центрировать камеру на ближайшую ось [Ctrl + 5]"
 "Rect Select"=""
 "Red"=""
 "Redo Gizmo Transform"=""
