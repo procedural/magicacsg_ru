@@ -26,9 +26,9 @@ vbox(def = 'bg2' corner = '12' radius = '2') ::
 			{
 				hbox(def = 'op-brush') ::
 				{
-					option(def = 'op-blue' id = 'local'		text = 'Local'	textAlign = '1' textSize = '7.5 7.5')(size = '45')(hint = 'Local Space [F]')
-					option(def = 'op-blue' id = 'global'	text = 'Global' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Global Space [G]')
-					option(def = 'op-blue' id = 'screen'	text = 'Screen' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Screen Space [H]')
+					option(def = 'op-blue' id = 'local'		text = 'Локал'	textAlign = '1' textSize = '7.5 7.5')(size = '45')(hint = 'Локальное пространство манипулятора [А]')
+					option(def = 'op-blue' id = 'global'	text = 'Глобал' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Глобальное пространство манипулятора [П]')
+					option(def = 'op-blue' id = 'screen'	text = 'Экран' textAlign = '1' textSize = '7.5 7.5')(size = '50')(hint = 'Экранное пространство манипулятора [Р]')
 				}
 			}
 		}
