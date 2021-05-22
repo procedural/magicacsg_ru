@@ -3,4 +3,4 @@ font_mono   : {path = [[$/config/font/consolas-bold-lit.otf]] scale = '1.7 1.8'}
 font_symbol : {path = [[$/config/font/symbol.otf]]}
 font_icon   : {path = [[$/config/font/icon.png]]}
 
-dict = [[$/config/dict-ru.txt]]
+dict = [[$/config/dict-ru-github-procedural.txt]]
