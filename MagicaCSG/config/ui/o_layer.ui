@@ -19,21 +19,21 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 		//----------------
 		// Type
 		//----------------
-		opBox(class = 'tab' id = 's_type' value = 'sphere' margin = '0 0 0 0')(hint = 'Stroke Shape : Duplicate [SHIFT+Drag]') ::
+		opBox(class = 'tab' id = 's_type' value = 'sphere' margin = '0 0 0 0')(hint = 'Форма элемента : Быстрое копирование [на экране удерживая Shift + Левую кнопку мыши на оси манипулятора]') ::
 		{
 			hbox ::
 			{
 				vbox(def = 'op-brush' flex = '1') ::
 				{
-					option(def = 'op-blue' id = 'sphere' 	select_value = [[]]					text = 'Sphere'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type sphere')
-					option(def = 'op-blue' id = 'triangle' 	select_value = [['v_prism' 'v_cone' 'v_top_v' 'v_torus']]		text = 'Triangle'	textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type triangle')
-					option(def = 'op-blue' id = 'joint'		select_value = [['v_cone']]					text = 'Joint'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type joint')
+					option(def = 'op-blue' id = 'sphere' 	select_value = [[]]					text = 'Сфера'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type sphere')
+					option(def = 'op-blue' id = 'triangle' 	select_value = [['v_prism' 'v_cone' 'v_top_v' 'v_torus']]		text = 'Треугола'	textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type triangle')
+					option(def = 'op-blue' id = 'joint'		select_value = [['v_cone']]					text = 'Капсула'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type joint')
 				}
 				vbox(def = 'op-brush' flex = '1') ::
 				{
-					option(def = 'op-blue' id = 'cube' 		select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Cube'	    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cube')
-					option(def = 'op-blue' id = 'polygon' 	select_value = [['v_prism' 'v_cone' 's_n' 'v_torus']]	text = 'Polygon'    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type polygon')
-					option(def = 'op-blue' id = 'cylinder' 	select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Cylinder'   textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cylinder')
+					option(def = 'op-blue' id = 'cube' 		select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Куб'	    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cube')
+					option(def = 'op-blue' id = 'polygon' 	select_value = [['v_prism' 'v_cone' 's_n' 'v_torus']]	text = 'Полигон'    textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type polygon')
+					option(def = 'op-blue' id = 'cylinder' 	select_value = [['v_prism' 'v_cone' 'v_torus']]		text = 'Цилиндр'   textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type cylinder')
 				}
 			}
 		}
