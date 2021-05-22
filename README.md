@@ -1,4 +1,4 @@
-# Перевод [MagicaCSG](https://ephtracy.github.io/index.html?page=magicacsg) на русский язык
+# Перевод [MagicaCSG](https://github.com/ephtracy/ephtracy.github.io/releases/tag/c0.0.0) на русский язык
 
 Установка:
 
