@@ -487,7 +487,7 @@ Dict
 "Surface Properties"=""
 "Surface Roughness"=""
 "Swap [CTRL] : Copy [CTRL+SHIFT] : Pick [ALT] : Gradient [CTRL+ALT]"="Поменять местами [удерж.: Ctrl + Левая кнопка мыши] : Клонировать [удерж.: Ctrl + Shift + Левая кнопка мыши] : Заменить [удерж.: Alt + Левая кнопка мыши] : Градиент [удерж.: Ctrl + Alt + Левая кнопка мыши]"
-"Switch between HSV/RGB Color Picker"=""
+"Switch between HSV/RGB Color Picker"="Переключение между ТНЯ (Тон, Насыщенность, Яркость) и КЗС (Красный, Зелёный, Синий) цветовыми моделями"
 "Switch between Model/World [TAB/Double Click]"=""
 "Texture"=""
 "Texture Model with Patterns"=""
