@@ -13,7 +13,7 @@ hbox ::
 		}
 	}
 
-	textfield(def = 'tf-name' id = 'name' onEnter = 'name' default = 'проект')
+	textfield(def = 'tf-name' id = 'name' onEnter = 'name' default = 'Проект')
 	(corner = '15' radius = '6' flex = '1')
 	(hint = 'Переименовать проект')
 
