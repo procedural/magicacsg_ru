@@ -26,7 +26,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 				vbox(def = 'op-brush' flex = '1') ::
 				{
 					option(def = 'op-blue' id = 'sphere' 	select_value = [[]]					text = 'Сфера'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type sphere')
-					option(def = 'op-blue' id = 'triangle' 	select_value = [['v_prism' 'v_cone' 'v_top_v' 'v_torus']]		text = 'Треугола'	textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type triangle')
+					option(def = 'op-blue' id = 'triangle' 	select_value = [['v_prism' 'v_cone' 'v_top_v' 'v_torus']]		text = 'Треугольник'	textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type triangle')
 					option(def = 'op-blue' id = 'joint'		select_value = [['v_cone']]					text = 'Капсула'		textAlign = '1' textSize = '6 6')(size = '28' next = '1')(class = 'cmd' onSelect = 'sset s_type joint')
 				}
 				vbox(def = 'op-brush' flex = '1') ::
