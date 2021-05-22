@@ -102,9 +102,9 @@ vbox(def = 'bg2') ::
 										}
 										vbox(id = 'p_hdq')(flex = '1') ::
 										{
-											slider(class = 'col')(id = '_h' range = '0 359')(flex = '1' next = '1')(hint = 'Hue')
-											slider(class = 'col')(id = '_s' range = '0 255')(flex = '1' next = '1')(hint = 'Saturation')
-											slider(class = 'col')(id = '_v' range = '0 255')(flex = '1')(hint = 'Value')
+											slider(class = 'col')(id = '_h' range = '0 359')(flex = '1' next = '1')(hint = 'Тон')
+											slider(class = 'col')(id = '_s' range = '0 255')(flex = '1' next = '1')(hint = 'Насыщенность')
+											slider(class = 'col')(id = '_v' range = '0 255')(flex = '1')(hint = 'Яркость')
 										}
 
 										vbox(id = 'p_t_hsv' size = '24' hidden = '1')  ::
