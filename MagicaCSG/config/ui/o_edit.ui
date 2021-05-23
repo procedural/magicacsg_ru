@@ -29,12 +29,12 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			{
 				button(onClick = 'copy'   text = 'Copy')(flex = '1' next = '1' corner = '1')(hint = 'Копировать выделенные элементы [Ctrl + С]')
 				button(onClick = 'cut'    text = 'Cut' )(flex = '1' next = '1')(hint = 'Вырезать выделенные элементы [Ctrl + Ч]')
-				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Вставить выделенные элементы [Ctrl + М]')
+				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Вставить последние скопированные или вырезанные элементы [Ctrl + М]')
 			}
 		}
 
 		switch(class = 'panel')(def='h2' selected = '1' text = 'Size' size = '24')
-		vbox(hint = 'Масштаб выделенных элементов') ::
+		vbox(hint = 'Масштаб выделенных элементов по локальным осям') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -57,7 +57,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		}
 
 		switch(class = 'panel')(def='h2' selected = '1' text = 'Позиция' size = '24')
-		vbox(hint = 'Позиция центра элемента в пространстве или позиция манипулятора для двух и более выделенных элементов') ::
+		vbox(hint = 'Глобальная позиция центра элемента или глобальная позиция манипулятора для двух и более выделенных элементов') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -80,11 +80,11 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		}
 
 		switch(class = 'panel')(def='h2' selected = '0' text = 'Scale' size = '24')
-		vbox(hint = 'Scale Strokes') ::
+		vbox(hint = 'Масштабировать выделенные элементы по всем осям (в 2 раза для кнопок, в N + Enter раз для поля ввода) относительно текущей позиции манипулятора') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
-				label(def = 'h3' text = 'S')(size = '14')
+				label(def = 'h3' text = 'М')(size = '14')
 				textfield(onEnter = 'scale x' text = '2' flex = '1')
 				button(def = 'bn-left' onClick = 'scale x 0.5' size = '12' corner = '5' next = '1')
 				button(def = 'bn-right'onClick = 'scale x 2.0' size = '12' corner = '10')
@@ -94,9 +94,9 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		hbox(clip = '0' size = '30') ::
 		{
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Move' flex = '1')
-			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'move r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Reset Center X')
+			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'move r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Сбросить значения позиций выделенных элементов по глобальной оси X (красная ось) до 0.0')
 		}
-		vbox(hint = 'Move Strokes [Arrow/Page]') ::
+		vbox(hint = 'Переместить выделенные элементы (по значению 1 для кнопок, по значению N + Enter для поля ввода) относительно осей текущего пространства манипулятора [Стрелки, Page Up, Page Down]') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -126,7 +126,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Rotate' flex = '1')
 			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'rot r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Reset Rotation')
 		}
-		vbox(hint = 'Rotate Strokes') ::
+		vbox(hint = 'Повернуть выделенные элементы (на 90 градусов для кнопок, на N + Enter градусов для поля ввода) относительно осей текущего пространства манипулятора') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -155,12 +155,12 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		{
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Flip' flex = '1')
 		}
-		hbox(size = '22' next = '1')(hint = 'Flip Strokes') ::
+		hbox(size = '22' next = '1')(hint = 'Отразить выделенные элементы относительно осей текущего пространства манипулятора') ::
 		{
 			button(def = 'bn-grey' onClick = 'flip x' text = 'X' radius = '2' corner = '5'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip y' text = 'Y' radius = '2' corner = '0'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip z' text = 'Z' radius = '2' corner = '0'  flex = '1' next = '1')
-			button(def = 'bn-grey' onClick = 'flip m' text = 'M' radius = '2' corner = '10' flex = '1')(hint = 'Mirror Strokes')
+			button(def = 'bn-grey' onClick = 'flip m' text = 'О' radius = '2' corner = '10' flex = '1')(hint = 'Отразить выделенные элементы относительно глобальной оси X (красная ось)')
 		}
 	}
 }

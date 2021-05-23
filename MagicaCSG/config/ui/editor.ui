@@ -310,7 +310,7 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 											switch(def = 'sw-cam' id = 'rm_bo'		onClick = 'set rm_show bo'		text = '^x77'  )(flex = '1')(hint = 'Показать фоновые слои [Ctrl + И]')
 											switch(def = 'sw-cam' id = 'rm_gd'	    onClick = 'set rm_show gd'		selected = '1' text = '^x52' textSize = '15 15')(flex = '1')(hint = 'Показать основание сцены [Ctrl + Г]')
 											switch(def = 'sw-cam' id = 'rm_wire'	onClick = 'set rm_show wire'	text = '^x58'  )(flex = '1')(hint = 'Показать сетку выделенных элементов [Ctrl + Ц]')
-											switch(def = 'sw-cam' id = 'rm_mir'		onClick = 'set rm_show mir'		selected = '0' text = '^x72' textSize = '16 16')(flex = '1')(hint = 'Показать плоскость отражения элементов по глобальной оси X (красная ось) [Ctrl + Ь]')
+											switch(def = 'sw-cam' id = 'rm_mir'		onClick = 'set rm_show mir'		selected = '0' text = '^x72' textSize = '16 16')(flex = '1')(hint = 'Показать плоскость отражения элементов относительно глобальной оси X (красная ось) [Ctrl + Ь]')
 										}
 									}
 								}
