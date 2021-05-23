@@ -436,7 +436,7 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 								{
 									vbox(flex = '1') ::
 									{
-										switch(class = 'view')(def = 'sw-title' view = [['v5' 'v5_s']] text = 'Gizmo' textOffset = '0 0')(size = '25' next = '4')
+										switch(class = 'view')(def = 'sw-title' view = [['v5' 'v5_s']] text = 'Манипуляции' textOffset = '0 0')(size = '25' next = '4')
 										/*opBox(class = 'tab')(id = 'right_mtab' hidden = '1' def = 'outline' index = '0')(size = '27' margin = '9 9 0 0' next = '3') ::
 										{
 											hbox(def = 'outline-i') ::
