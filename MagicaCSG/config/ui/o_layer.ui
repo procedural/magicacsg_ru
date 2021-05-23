@@ -119,21 +119,21 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 				slider(def = 'sl-mtl' id = 's_hole_sl' onChange = 'sset s_hole')(size = '22')
 			}
 
-			vbox(hint = 'Bevel [XY]') ::
+			vbox(hint = 'Радиус фаски по локальным осям X (красная ось) и Y (зелёная ось)') ::
 			{
 				hbox(size = '15') ::
 				{
-					label(def = 'h3' text = 'Bevel')(flex = '1')
+					label(def = 'h3' text = 'Фаска')(flex = '1')
 					textField(def = 'tf-sub' id = 's_bevel' onEnter = 'sset s_bevel')(size = '35')
 				}
 				slider(def = 'sl-mtl' id = 's_bevel_sl' onChange = 'sset s_bevel')(size = '22')
 			}
 
-			vbox(hint = 'Round [XYZ]') ::
+			vbox(hint = 'Радиус округления') ::
 			{
 				hbox(size = '15') ::
 				{
-					label(def = 'h3' text = 'Round')(flex = '1')
+					label(def = 'h3' text = 'Округление')(flex = '1')
 					textField(def = 'tf-sub' id = 's_round' onEnter = 'sset s_round')(size = '35')
 				}
 				slider(def = 'sl-mtl' id = 's_round_sl' onChange = 'sset s_round')(size = '22')
