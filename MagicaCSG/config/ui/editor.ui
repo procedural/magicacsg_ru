@@ -96,16 +96,16 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 					{
 						vbox(size = '28') ::
 						{
-							label(text = 'RGB' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '1')
-							label(text = 'HEX' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '1')
-							label(text = 'HSV' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '0')
+							label(text = 'КЗС' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '1')
+							label(text = 'ВЕБ' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '1')
+							label(text = 'ТНЯ' align = '1' textsize = '7 7' textoffset = '6 0')(flex = '1' next = '0')
 						}
 
 						vbox(flex = '1') ::
 						{
-							textfield(class = 'col' def = 'tf-col' id = '_rgb' maxlength = '12' textSize = '6 6')(flex = '1' next = '1')(hint = 'RGB Values')
-							textfield(class = 'col' def = 'tf-col' id = '_hex' maxlength = '12' textSize = '6 6')(flex = '1' next = '1')(hint = 'HEX Values')
-							textfield(class = 'col' def = 'tf-col' id = '_hsv' maxlength = '12' textSize = '6 6')(flex = '1' next = '0')(hint = 'HSV Values')
+							textfield(class = 'col' def = 'tf-col' id = '_rgb' maxlength = '12' textSize = '6 6')(flex = '1' next = '1')(hint = 'Значения КЗС (Красный, Зелёный, Синий)')
+							textfield(class = 'col' def = 'tf-col' id = '_hex' maxlength = '12' textSize = '6 6')(flex = '1' next = '1')(hint = 'Значения веб-цвета (три пары шестнадцатеричных цифр)')
+							textfield(class = 'col' def = 'tf-col' id = '_hsv' maxlength = '12' textSize = '6 6')(flex = '1' next = '0')(hint = 'Значения ТНЯ (Тон, Насыщенность, Яркость)')
 						}
 					}
 
