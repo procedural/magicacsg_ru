@@ -228,7 +228,7 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 					{
 						vbox ::
 						{
-							switch(class = 'view')(id = 'r_title3' def = 'sw-title' text = 'Scene' view = [['v1' 'v1_s']] textOffset = '1.5 0' margin = '0 0 0 0')(size = '25' next = '4')
+							switch(class = 'view')(id = 'r_title3' def = 'sw-title' text = 'Сцена' view = [['v1' 'v1_s']] textOffset = '1.5 0' margin = '0 0 0 0')(size = '25' next = '4')
 
 							vbox(next = '3')( margin = '6 6 0 0')::
 							{
@@ -237,9 +237,9 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 									hbox(def = 'outline-i') ::
 									{
 										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_model']] text = '^6' onSelect = 'ui_set r_title3 text *Project')(flex = '1')(hint = 'Show Project List')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_graph']] text = '^104' textSize = '13 13' onSelect = 'ui_set r_title3 text Scene')(flex = '1')(hint = 'Show Scene Outline')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text IO')(flex = '1')(hint = 'Show IO')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text Info')(flex = '1')(hint = 'Show Info')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_graph']] text = '^104' textSize = '13 13' onSelect = 'ui_set r_title3 text Сцена')(flex = '1')(hint = 'Show Scene Outline')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text Ввод-вывод')(flex = '1')(hint = 'Переключение на панель "Ввод-вывод"')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text Информация')(flex = '1')(hint = 'Переключение на панель "Информация"')
 									}
 								}
 							}
