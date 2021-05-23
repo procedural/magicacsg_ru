@@ -264,7 +264,7 @@ Dict
 "Mirror"=""
 "Mirror Mode"=""
 "Mix"=""
-"Model"="Макет"
+"Model"="Сцена"
 "Pattern List"=""
 "Project List"=""
 "Model [F1]"=""
