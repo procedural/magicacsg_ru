@@ -84,7 +84,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			button(def = 'bn-ic' textFont = 'icon' text = '^12'  textAlign = '2' textSize = '13 13' onClick = 'sel color'  size = '20' margin = '0 0 6 6')(hint = 'Выделить все элементы с текущим цветом [С]')
 			button(def = 'bn-ic' textFont = 'icon' text = '^106' textAlign = '2' textSize = '13 13' onClick = 'sset s_pal' size = '20' margin = '0 0 6 6')(hint = 'Скопировать выбранный цвет палитры в текущий цвет и в цвет выделенных элементов [З]')
 			sp(flex = '1')
-			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Текущий цвет : Скопировать цвет другого элемента в текущий цвет и в цвет выделенных элементов [Alt + Левая кнопка мыши]')
+			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Текущий цвет [Левая кнопка мыши] : Скопировать цвет другого элемента в текущий цвет и в цвет выделенных элементов [Alt + Левая кнопка мыши]')
 		}
 
 		vbox(hint = 'Blend Radius' prev = '10') ::
