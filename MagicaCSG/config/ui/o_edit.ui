@@ -7,10 +7,10 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		{
 			hbox::
 			{
-				option(def = 'op-blue' id = '0'	textFont = 'std' text = 'X1'  textAlign = '2' textSize = '6.5 6.5')(flex = '0.8')(hint = 'Single Side Scale Constraint [1]')
-				option(def = 'op-blue' id = '1'	textFont = 'std' text = 'X2'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Double Side Scale Constraint [2]')
-				option(def = 'op-blue' id = '3'	textFont = 'std' text = 'XYZ' textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'XYZ Scale Constraint [3]')
-				option(def = 'op-blue' id = '2'	textFont = 'std' text = 'XY'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'XY Scale Constraint [4]')
+				option(def = 'op-blue' id = '0'	textFont = 'std' text = 'X1'  textAlign = '2' textSize = '6.5 6.5')(flex = '0.8')(hint = 'Ограничение масштабирования по одну сторону оси [1]')
+				option(def = 'op-blue' id = '1'	textFont = 'std' text = 'X2'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по двум противоположным сторонам оси [2]')
+				option(def = 'op-blue' id = '3'	textFont = 'std' text = 'XYZ' textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по всем осям [3]')
+				option(def = 'op-blue' id = '2'	textFont = 'std' text = 'XY'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по осям X (красная ось) и Y (зелёная ось) [4]')
 			}
 		}
 		sp(def = 'bar-h' size = '3')
