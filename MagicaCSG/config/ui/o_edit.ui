@@ -14,7 +14,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			}
 		}
 		sp(def = 'bar-h' size = '3')
-			
+
 		switch(class = 'panel')(def='h2' selected = '1' text = 'Select' size = '24')
 		vbox ::
 		{
@@ -32,7 +32,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Paste Strokes [CTRL+V]')
 			}
 		}
-		
+
 		switch(class = 'panel')(def='h2' selected = '1' text = 'Size' size = '24')
 		vbox(hint = 'Stroke Size') ::
 		{
@@ -56,7 +56,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			}
 		}
 
-		switch(class = 'panel')(def='h2' selected = '1' text = 'Center' size = '24')		
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Center' size = '24')
 		vbox(hint = 'Stroke Center') ::
 		{
 			hbox(size = '22' next = '1') ::
@@ -78,8 +78,8 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 				resizer(class = 'float')(range = '-2048 +2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
 			}
 		}
-		
-		switch(class = 'panel')(def='h2' selected = '0' text = 'Scale' size = '24')		
+
+		switch(class = 'panel')(def='h2' selected = '0' text = 'Scale' size = '24')
 		vbox(hint = 'Scale Strokes') ::
 		{
 			hbox(size = '22' next = '1') ::
@@ -150,7 +150,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 				button(def = 'bn-right'onClick = 'rot z +90' size = '12' corner = '10')
 			}
 		}
-		
+
 		hbox(clip = '0' size = '30') ::
 		{
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Flip' flex = '1')
@@ -160,7 +160,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			button(def = 'bn-grey' onClick = 'flip x' text = 'X' radius = '2' corner = '5'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip y' text = 'Y' radius = '2' corner = '0'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip z' text = 'Z' radius = '2' corner = '0'  flex = '1' next = '1')
-			button(def = 'bn-grey' onClick = 'flip m' text = 'M' radius = '2' corner = '10' flex = '1')(hint = 'Mirror Strokes') 
+			button(def = 'bn-grey' onClick = 'flip m' text = 'M' radius = '2' corner = '10' flex = '1')(hint = 'Mirror Strokes')
 		}
 	}
 }
