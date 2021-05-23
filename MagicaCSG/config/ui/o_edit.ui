@@ -27,9 +27,9 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 
 			hbox(size = '24' next = '1') ::
 			{
-				button(onClick = 'copy'   text = 'Copy')(flex = '1' next = '1' corner = '1')(hint = 'Copy Strokes [CTRL+C]')
-				button(onClick = 'cut'    text = 'Cut' )(flex = '1' next = '1')(hint = 'Cut Strokes [CTRL+X]')
-				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Paste Strokes [CTRL+V]')
+				button(onClick = 'copy'   text = 'Copy')(flex = '1' next = '1' corner = '1')(hint = 'Копировать выделенные элементы [Ctrl + С]')
+				button(onClick = 'cut'    text = 'Cut' )(flex = '1' next = '1')(hint = 'Вырезать выделенные элементы [Ctrl + Ч]')
+				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Вставить выделенные элементы [Ctrl + М]')
 			}
 		}
 
