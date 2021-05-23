@@ -87,7 +87,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Текущий цвет : Меню текущего цвета [Левая кнопка мыши] : Скопировать цвет другого элемента в текущий цвет и в цвет выделенных элементов [Alt + Левая кнопка мыши]')
 		}
 
-		vbox(hint = 'Blend Radius' prev = '10') ::
+		vbox(hint = 'Радиус смешения' prev = '10') ::
 		{
 			hbox(size = '15') ::
 			{
