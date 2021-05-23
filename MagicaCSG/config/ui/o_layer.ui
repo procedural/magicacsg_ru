@@ -140,11 +140,11 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			}
 		}
 
-		vbox(id = 'v_cone' hint = 'Cone [Z]' hidden = '1') ::
+		vbox(id = 'v_cone' hint = 'Придать форму конуса по локальной оси Z (синяя ось)' hidden = '1') ::
 		{
 			hbox(size = '15') ::
 			{
-				label(def = 'h3' text = 'Cone')(flex = '1')
+				label(def = 'h3' text = 'Конус')(flex = '1')
 				textField(def = 'tf-sub' id = 's_cone' onEnter = 'sset s_cone')(size = '35')
 			}
 			slider(def = 'sl-mtl' id = 's_cone_sl' onChange = 'sset s_cone')(size = '22')
