@@ -160,7 +160,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			slider(def = 'sl-mtl' id = 's_top_v_sl' onChange = 'sset s_top_v' range = '-100 100')(size = '22')
 		}
 
-		hbox(id = 'v_torus' hidden = '1')(size = '22')(hint = 'Режим торуса' prev = '6') ::
+		hbox(id = 'v_torus' hidden = '1')(size = '22')(hint = 'Придать форму торуса' prev = '6') ::
 		{
 			label(def = 'h3' text = 'Торус')(flex = '1' next = '3')
 			switch(def = 'sw-check' id = 's_torus' onClick = 'sset s_torus' selected = '1')(size = '6')
