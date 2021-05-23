@@ -384,7 +384,7 @@ Dict
 "Rotate Model 90 Degrees"=""
 "Rotate Model : [Axis] [Angle]"=""
 "Rotate Objects 90 Degrees [-/+]"=""
-"Rotate [RButton] : Move [MButton]"="Камера: Повернуть [Правая кнопка мыши] : Переместить [Средняя кнопка мыши] : Отдалить [Колёсико мыши]"
+"Rotate [RButton] : Move [MButton]"="Камера : Повернуть [Правая кнопка мыши] : Переместить [Средняя кнопка мыши] : Отдалить [Колёсико мыши]"
 "Rotation"=""
 "Roughness"=""
 "SG"=""
