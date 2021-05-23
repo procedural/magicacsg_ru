@@ -150,11 +150,11 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			slider(def = 'sl-mtl' id = 's_cone_sl' onChange = 'sset s_cone')(size = '22')
 		}
 
-		vbox(id = 'v_top_v' hint = 'Top Vertex' hidden = '1') ::
+		vbox(id = 'v_top_v' hint = 'Сдвиг вершины' hidden = '1') ::
 		{
 			hbox(size = '15') ::
 			{
-				label(def = 'h3' text = 'Top')(flex = '1')
+				label(def = 'h3' text = 'Сдвиг')(flex = '1')
 				textField(def = 'tf-sub' id = 's_top_v' onEnter = 'sset s_top_v')(size = '35')
 			}
 			slider(def = 'sl-mtl' id = 's_top_v_sl' onChange = 'sset s_top_v' range = '-100 100')(size = '22')
