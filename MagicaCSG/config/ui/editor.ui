@@ -199,7 +199,7 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 						vbox ::
 						{
 							switch(def = 'sw-menu' text = '^x2261' textFont = 'symbol' textSize = '12 18' onClick = [[ui_view 'm_sli' 'm_val']])(flex = '1')(hint = 'Show Values')
-							switch(def = 'sw-menu' text = '^x25C6' textFont = 'symbol' textSize = '8 10' onSelect = [[ui_set 'menu_col' 'temp' '0']] onDeselect = [[ui_set 'menu_col' 'temp' '1']])(flex = '1')(hint = 'Закрепить меню поверх экрана')
+							switch(def = 'sw-menu' text = '^x25C6' textFont = 'symbol' textSize = '8 10' onSelect = [[ui_set 'menu_col' 'temp' '0']] onDeselect = [[ui_set 'menu_col' 'temp' '1']])(flex = '1')(hint = 'Закрепить меню текущего цвета поверх экрана')
 							switch(def = 'sw-menu' text = '^x25cf' textFont = 'symbol' onClick = [[ui_view 'm_hdq' 'm_hsv']])(flex = '1')(hint = 'Show SV Block')
 						}
 					}
