@@ -449,7 +449,7 @@ Dict
 "Show Original Image [Left]"=""
 "Show Pattern List"=""
 "Show Project List"=""
-"Show SV Block"="Показать блок Насыщенности и Яркости"
+"Show SV Block"="Показать блок насыщенности и яркости"
 "Show Sampling Settings"=""
 "Show Scene Outline"=""
 "Show Shader List"=""
