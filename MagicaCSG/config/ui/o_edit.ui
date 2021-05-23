@@ -34,7 +34,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		}
 
 		switch(class = 'panel')(def='h2' selected = '1' text = 'Size' size = '24')
-		vbox(hint = 'Stroke Size') ::
+		vbox(hint = 'Масштаб выделенных элементов') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
