@@ -96,7 +96,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Move' flex = '1')
 			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'move r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Сбросить значения позиций выделенных элементов по глобальной оси X (красная ось) до 0.0')
 		}
-		vbox(hint = 'Переместить выделенные элементы (по значению 1 для кнопок, по значению N + Enter для поля ввода) относительно осей текущего пространства манипулятора [Стрелки, Page Up, Page Down]') ::
+		vbox(hint = 'Переместить выделенные элементы (по значению 1 для кнопок, по значению N + Enter для поля ввода) относительно оси текущего пространства манипулятора [Стрелки, Page Up, Page Down]') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -126,7 +126,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Rotate' flex = '1')
 			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'rot r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Reset Rotation')
 		}
-		vbox(hint = 'Повернуть выделенные элементы (на 90 градусов для кнопок, на N + Enter градусов для поля ввода) относительно осей текущего пространства манипулятора') ::
+		vbox(hint = 'Повернуть выделенные элементы (на 90 градусов для кнопок, на N + Enter градусов для поля ввода) относительно оси текущего пространства манипулятора') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
@@ -155,7 +155,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		{
 			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Flip' flex = '1')
 		}
-		hbox(size = '22' next = '1')(hint = 'Отразить выделенные элементы относительно осей текущего пространства манипулятора') ::
+		hbox(size = '22' next = '1')(hint = 'Отразить выделенные элементы относительно оси текущего пространства манипулятора') ::
 		{
 			button(def = 'bn-grey' onClick = 'flip x' text = 'X' radius = '2' corner = '5'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip y' text = 'Y' radius = '2' corner = '0'  flex = '1' next = '1')
