@@ -87,7 +87,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Текущий цвет : Меню текущего цвета [Левая кнопка мыши] : Скопировать цвет другого элемента в текущий цвет и в цвет выделенных элементов [Alt + Левая кнопка мыши]')
 		}
 
-		vbox(hint = 'Радиус смешивания с другими элементами' prev = '10') ::
+		vbox(hint = 'Радиус смешивания выделенных элементов с другими элементами' prev = '10') ::
 		{
 			hbox(size = '15') ::
 			{
@@ -97,7 +97,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			slider(def = 'sl-mtl' id = 's_blend_sl' onChange = 'sset s_blend' range = '0 128')(size = '22')
 		}
 
-		vbox(hint = 'Радиус оболочки') ::
+		vbox(hint = 'Радиус оболочки выделенных элементов') ::
 		{
 			hbox(size = '15') ::
 			{
@@ -109,7 +109,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 
 		vbox(id = 'v_prism' hidden = '1') ::
 		{
-			vbox(hint = 'Радиус отверстия по локальным осям X (красная ось) и Y (зелёная ось)') ::
+			vbox(hint = 'Радиус отверстия выделенных элементов по локальным осям X (красная ось) и Y (зелёная ось)') ::
 			{
 				hbox(size = '15') ::
 				{
@@ -119,7 +119,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 				slider(def = 'sl-mtl' id = 's_hole_sl' onChange = 'sset s_hole')(size = '22')
 			}
 
-			vbox(hint = 'Радиус фаски по локальным осям X (красная ось) и Y (зелёная ось)') ::
+			vbox(hint = 'Радиус фаски выделенных элементов по локальным осям X (красная ось) и Y (зелёная ось)') ::
 			{
 				hbox(size = '15') ::
 				{
@@ -129,7 +129,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 				slider(def = 'sl-mtl' id = 's_bevel_sl' onChange = 'sset s_bevel')(size = '22')
 			}
 
-			vbox(hint = 'Радиус округления') ::
+			vbox(hint = 'Радиус округления выделенных элементов') ::
 			{
 				hbox(size = '15') ::
 				{
@@ -140,7 +140,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			}
 		}
 
-		vbox(id = 'v_cone' hint = 'Придать форму конуса по локальной оси Z (синяя ось)' hidden = '1') ::
+		vbox(id = 'v_cone' hint = 'Придать форму конуса выделенным элементам по локальной оси Z (синяя ось)' hidden = '1') ::
 		{
 			hbox(size = '15') ::
 			{
@@ -150,7 +150,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			slider(def = 'sl-mtl' id = 's_cone_sl' onChange = 'sset s_cone')(size = '22')
 		}
 
-		vbox(id = 'v_top_v' hint = 'Сдвиг вершины' hidden = '1') ::
+		vbox(id = 'v_top_v' hint = 'Сдвиг вершин выделенных элементов' hidden = '1') ::
 		{
 			hbox(size = '15') ::
 			{
