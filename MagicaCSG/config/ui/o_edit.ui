@@ -56,8 +56,8 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			}
 		}
 
-		switch(class = 'panel')(def='h2' selected = '1' text = 'Center' size = '24')
-		vbox(hint = 'Stroke Center') ::
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Позиция' size = '24')
+		vbox(hint = 'Позиция центра элемента в пространстве или позиция манипулятора для двух и более выделенных элементов') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
