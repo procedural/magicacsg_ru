@@ -87,7 +87,7 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Текущий цвет : Меню текущего цвета [Левая кнопка мыши] : Скопировать цвет другого элемента в текущий цвет и в цвет выделенных элементов [Alt + Левая кнопка мыши]')
 		}
 
-		vbox(hint = 'Радиус смешения' prev = '10') ::
+		vbox(hint = 'Радиус смешивания' prev = '10') ::
 		{
 			hbox(size = '15') ::
 			{
@@ -97,11 +97,11 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			slider(def = 'sl-mtl' id = 's_blend_sl' onChange = 'sset s_blend' range = '0 128')(size = '22')
 		}
 
-		vbox(hint = 'Shell [XYZ]') ::
+		vbox(hint = 'Радиус оболочки') ::
 		{
 			hbox(size = '15') ::
 			{
-				label(def = 'h3' text = 'Shell')(flex = '1')
+				label(def = 'h3' text = 'Оболочка')(flex = '1')
 				textField(def = 'tf-sub' id = 's_shell' onEnter = 'sset s_shell')(size = '35')
 			}
 			slider(def = 'sl-mtl' id = 's_shell_sl' onChange = 'sset s_shell')(size = '22')
