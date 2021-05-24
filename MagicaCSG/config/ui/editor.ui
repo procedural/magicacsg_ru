@@ -238,8 +238,8 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 									{
 										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_model']] text = '^6' onSelect = 'ui_set r_title3 text *Project')(flex = '1')(hint = 'Show Project List')
 										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_graph']] text = '^104' textSize = '13 13' onSelect = 'ui_set r_title3 text Сцена')(flex = '1')(hint = 'Show Scene Outline')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text Импорт-экспорт')(flex = '1')(hint = 'Переключение на панель "Импорт-экспорт"')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text Информация')(flex = '1')(hint = 'Переключение на панель "Информация"')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text Импорт-экспорт')(flex = '1')(hint = 'Показать панель импорта-экспорта')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text Информация')(flex = '1')(hint = 'Показать панель информации')
 									}
 								}
 							}
