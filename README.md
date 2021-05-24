@@ -1,5 +1,7 @@
 # Перевод [MagicaCSG](https://github.com/ephtracy/ephtracy.github.io/releases/tag/c0.0.0) на русский язык
 
+![](https://raw.github.com/procedural/magicacsg_ru/master/screenshot.png)
+
 Установка:
 
 * Скачайте архив: [magicacsg_ru-main.zip](https://github.com/procedural/magicacsg_ru/archive/refs/heads/main.zip)
