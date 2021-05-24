@@ -3,7 +3,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 	vbox(id = 'oedit_basic' clip = '0') ::
 	{
 		sp(def = 'bar-h' size = '3')
-		opBox(id = 'scale_constraint' onClick = 'set scale_constraint' index = '0')(size = '24') ::
+		opBox(id = 'scale_constraint' onClick = 'set scale_constraint' index = '1')(size = '24') ::
 		{
 			hbox::
 			{
