@@ -476,6 +476,7 @@ Dict
 "Stochastic Sampling Global Illumination"=""
 "Stop"=""
 "Stop Rendering"=""
+"Stroke"="Элемент"
 "Subtract"=""
 "Subsurface Scattering Media"=""
 "Subtraction of Objects"=""
