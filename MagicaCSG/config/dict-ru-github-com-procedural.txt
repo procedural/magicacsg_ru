@@ -282,7 +282,7 @@ Dict
 "Model [F1]"=""
 "Modify"=""
 "All"="Все"
-"Modify All Materials"="Изменять все материалы"
+"Modify All Materials"="Изменить все материалы"
 "Modify Selection Region"=""
 "Motion Blur"=""
 "Move"="Переместить"
