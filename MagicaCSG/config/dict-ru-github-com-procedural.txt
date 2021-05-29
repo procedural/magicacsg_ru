@@ -491,7 +491,7 @@ Dict
 "Stop"=""
 "Stop Rendering"=""
 "Stroke"="Элемент"
-"Stroke List"="Список элементов"
+"Stroke List"="Список элементов выделенного слоя"
 "Add Stroke"="Добавить элемент"
 "Delete Stroke"="Удалить выделенные элементы"
 "Move Stroke Up"="Переместить выделенные элементы вверх"
