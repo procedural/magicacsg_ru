@@ -1,4 +1,4 @@
-# Перевод [MagicaCSG](https://github.com/ephtracy/ephtracy.github.io/releases/tag/c0.0.0) на русский язык
+# Перевод [MagicaCSG](https://ephtracy.github.io/index.html?page=magicacsg) на русский язык
 
 ![](https://raw.github.com/procedural/magicacsg_ru/master/screenshot.png)
 
@@ -9,10 +9,9 @@
 
 Требования:
 
-* MagicaCSG версии 0.0.0 (`MagicaCSG.0.0.0.zip`)
+* MagicaCSG версии 0.0.0 ([MagicaCSG.0.0.0.zip](https://github.com/ephtracy/ephtracy.github.io/releases/download/c0.0.0/MagicaCSG.0.0.0.zip))
 
 Дополнительные ссылки:
 
-* https://ephtracy.github.io/index.html?page=magicacsg
 * https://twitter.com/ephtracy/status/1395589747259674624
 * https://twitter.com/ephtracy/status/1395752051158798337
