@@ -15,3 +15,5 @@
 
 * https://twitter.com/ephtracy/status/1395589747259674624
 * https://twitter.com/ephtracy/status/1395752051158798337
+* https://github.com/procedural/magicacsg_tips
+* https://github.com/procedural/magicacsg_copy_layers_program
