@@ -1,0 +1,166 @@
+vbox(margin = '6 6 0 0' clip = '0') ::
+{
+	vbox(id = 'oedit_basic' clip = '0') ::
+	{
+		sp(def = 'bar-h' size = '3')
+		opBox(id = 'scale_constraint' onClick = 'set scale_constraint' index = '1')(size = '24') ::
+		{
+			hbox::
+			{
+				option(def = 'op-blue' id = '0'	textFont = 'std' text = 'X1'  textAlign = '2' textSize = '6.5 6.5')(flex = '0.8')(hint = 'Ограничение масштабирования по одну сторону оси [1]')
+				option(def = 'op-blue' id = '1'	textFont = 'std' text = 'X2'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по двум противоположным сторонам оси [2]')
+				option(def = 'op-blue' id = '3'	textFont = 'std' text = 'XYZ' textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по всем осям [3]')
+				option(def = 'op-blue' id = '2'	textFont = 'std' text = 'XY'  textAlign = '2' textSize = '6.5 6.5')(flex = '1')(hint = 'Одновременное масштабирование по осям X (красная ось) и Y (зелёная ось) [4]')
+			}
+		}
+		sp(def = 'bar-h' size = '3')
+
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Select' size = '24')
+		vbox ::
+		{
+			hbox(size = '26' next = '1') ::
+			{
+				button(onClick = 'sel all' text = 'Select All*')(flex = '1' next = '1' corner = '4')(hint = 'Select All [CTRL+A]')
+				button(onClick = 'sel inv' text = 'Inverse*')(flex = '1' next = '1')(hint = 'Select Inverse [CTRL+I]')
+				button(onClick = 'sel' text = 'None')(flex = '1.1' corner = '8')(hint = 'Select None [CTRL+D]')
+			}
+
+			hbox(size = '24' next = '1') ::
+			{
+				button(onClick = 'copy'   text = 'Copy')(flex = '1' next = '1' corner = '1')(hint = 'Копировать выделенные элементы [Ctrl + С]')
+				button(onClick = 'cut'    text = 'Cut' )(flex = '1' next = '1')(hint = 'Вырезать выделенные элементы [Ctrl + Ч]')
+				button(onClick = 'paste' text = 'Paste')(flex = '1.1' corner = '2')(hint = 'Вставить последние скопированные или вырезанные элементы [Ctrl + М]')
+			}
+		}
+
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Size' size = '24')
+		vbox(hint = 'Масштаб выделенных элементов по локальным осям') ::
+		{
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'X')(size = '14')
+				textField(id = 's_size_x' textColor = '255 255 255 180' onEnter = 'sset s_size 0' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '0 2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'Y')(size = '14')
+				textField(id = 's_size_y' textColor = '255 255 255 180' onEnter = 'sset s_size 1' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '0 2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+			hbox(size = '22') ::
+			{
+				label(def = 'h3' text = 'Z')(size = '14')
+				textField(id = 's_size_z' textColor = '255 255 255 180' onEnter = 'sset s_size 2' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '0 2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+		}
+
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Позиция' size = '24')
+		vbox(hint = 'Глобальная позиция центра элемента или глобальная позиция манипулятора для двух и более выделенных элементов') ::
+		{
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'X')(size = '14')
+				textField(id = 's_tx' textColor = '255 255 255 180' onEnter = 'moveto x' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '-2048 +2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'Y')(size = '14')
+				textField(id = 's_ty' textColor = '255 255 255 180' onEnter = 'moveto y' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '-2048 +2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'Z')(size = '14')
+				textField(id = 's_tz' textColor = '255 255 255 180' onEnter = 'moveto z' maxLength = '7' enter = '1')(flex = '1' next = '1')
+				resizer(class = 'float')(range = '-2048 +2048' step = '1' space = '1')(size = '16' next = '1')(margin = '0 0 -2 -2')
+			}
+		}
+
+		switch(class = 'panel')(def='h2' selected = '0' text = 'Scale' size = '24')
+		vbox(hint = 'Масштабировать выделенные элементы по всем осям (в 2 раза для кнопок, в N + Enter раз для поля ввода) относительно текущей позиции манипулятора') ::
+		{
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'М')(size = '14')
+				textfield(onEnter = 'scale x' text = '2' flex = '1')
+				button(def = 'bn-left' onClick = 'scale x 0.5' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'scale x 2.0' size = '12' corner = '10')
+			}
+		}
+
+		hbox(clip = '0' size = '30') ::
+		{
+			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Move' flex = '1')
+			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'move r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Сбросить значения позиций выделенных элементов по глобальной оси X (красная ось) до 0.0')
+		}
+		vbox(hint = 'Переместить выделенные элементы (по значению 1 для кнопок, по значению N + Enter для поля ввода) относительно оси текущего пространства манипулятора [Стрелки, Page Up, Page Down]') ::
+		{
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'X')(size = '14')
+				textfield(onEnter = 'move x' text = '1' flex = '1')
+				button(def = 'bn-left' onClick = 'move x -1' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'move x +1' size = '12' corner = '10')
+			}
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'Y')(size = '14')
+				textfield(onEnter = 'move y' text = '1' flex = '1')
+				button(def = 'bn-left' onClick = 'move y -1' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'move y +1' size = '12' corner = '10')
+			}
+			hbox(size = '22') ::
+			{
+				label(def = 'h3' text = 'Z')(size = '14')
+				textfield(onEnter = 'move z' text = '1' flex = '1')
+				button(def = 'bn-left' onClick = 'move z -1' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'move z +1' size = '12' corner = '10')
+			}
+		}
+
+		hbox(clip = '0' size = '30') ::
+		{
+			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Rotate' flex = '1')
+			button(def = 'bn-ic-t' text = '^38' textFont = 'icon' onClick = 'rot r' delayed = '0' textSize = '12 12')(size = '22' margin = '0 0 4 4' radius = '2')(hint = 'Reset Rotation')
+		}
+		vbox(hint = 'Повернуть выделенные элементы (на 90 градусов для кнопок, на N + Enter градусов для поля ввода) относительно оси текущего пространства манипулятора') ::
+		{
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'X')(size = '14')
+				textfield(onEnter = 'rot x' text = '90' flex = '1')
+				button(def = 'bn-left' onClick = 'rot x -90' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'rot x +90' size = '12' corner = '10')
+			}
+			hbox(size = '22' next = '1') ::
+			{
+				label(def = 'h3' text = 'Y')(size = '14')
+				textfield(onEnter = 'rot y' text = '90' flex = '1')
+				button(def = 'bn-left' onClick = 'rot y -90' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'rot y +90' size = '12' corner = '10')
+			}
+			hbox(size = '22') ::
+			{
+				label(def = 'h3' text = 'Z')(size = '14')
+				textfield(onEnter = 'rot z' text = '90' flex = '1')
+				button(def = 'bn-left' onClick = 'rot z -90' size = '12' corner = '5' next = '1')
+				button(def = 'bn-right'onClick = 'rot z +90' size = '12' corner = '10')
+			}
+		}
+
+		hbox(clip = '0' size = '30') ::
+		{
+			switch(class = 'panel')(def='h2' selected = '0' path = '1 1' text = 'Flip' flex = '1')
+		}
+		hbox(size = '22' next = '1')(hint = 'Отразить выделенные элементы относительно оси текущего пространства манипулятора') ::
+		{
+			button(def = 'bn-grey' onClick = 'flip x' text = 'X' radius = '2' corner = '5'  flex = '1' next = '1')
+			button(def = 'bn-grey' onClick = 'flip y' text = 'Y' radius = '2' corner = '0'  flex = '1' next = '1')
+			button(def = 'bn-grey' onClick = 'flip z' text = 'Z' radius = '2' corner = '0'  flex = '1' next = '1')
+			button(def = 'bn-grey' onClick = 'flip m' text = 'О' radius = '2' corner = '10' flex = '1')(hint = 'Отразить выделенные элементы относительно глобальной оси X (красная ось)')
+		}
+	}
+}

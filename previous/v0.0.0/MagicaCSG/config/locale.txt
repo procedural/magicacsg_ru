@@ -1,0 +1,6 @@
+font_std    : {path = [[C:/Windows/Fonts/calibrib.ttf]] scale = '1.75 1.75'}
+font_mono   : {path = [[C:/Windows/Fonts/consolab.ttf]] scale = '1.7 1.8'}
+font_symbol : {path = [[$/config/font/symbol.otf]]}
+font_icon   : {path = [[$/config/font/icon.png]]}
+
+dict = [[$/config/dict-ru-github-com-procedural.txt]]

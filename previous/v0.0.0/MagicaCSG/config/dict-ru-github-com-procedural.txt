@@ -1,0 +1,1004 @@
+Dict
+"Model [F2]"="Сцена [кнопка F2 на клавиатуре]"
+"Render [F2]"="Рендер [кнопка F2 на клавиатуре]"
+"2D/3D Shape"=""
+"4/8 Neighbor Searching Direction"=""
+"ACES Filmic Tone Mapping"="Кинематографическое отображение тонов ACES (англ.: Academy Color Encoding System (ACES) filmic tone mapping)"
+"AO"=""
+"Absorb Media"=""
+"Add Pattern in the Scene"=""
+"Align"=""
+"Align Objects to Center"=""
+"Align Objects to Maximum"=""
+"Align Objects to Minimum"=""
+"Select All*"="Всё"
+"Angle"="Угол"
+"Anti-Aliasing"="Сглаживание"
+"Aperture"="Диафрагма"
+"Aperture Size : Depth of Field"="Размер диафрагмы (англ.: aperture size) : Глубина резкости (англ.: Depth of Field, DOF)"
+"Area"="Размер"
+"Argument"=""
+"Aspect"="Ширина"
+"Atmospheric Scattering"="Атмосферное рассеяние"
+"Attach"=""
+"Attach Voxels [T]"=""
+"Axis Mode"=""
+"Background"="Фон"
+"Background Color"="Цвет фона"
+"Blade Number"="Количество лепестков диафрагмы (англ.: aperture blade)"
+"Blade Rotation Angle"="Угол поворота лепестков диафрагмы (англ.: aperture blade)"
+"Blade"="Лепесток"
+"Blend"="Смесь"
+"Blend Materials"=""
+"Bloom"="Блики"
+"Bloom Aspect Ratio"="Ширина бликов"
+"Bloom Mix"="Микширование бликов с рендер изображением в процентах"
+"Bloom Size"="Размер бликов"
+"Bloom Threshold"="Порог появления бликов"
+"Blue"="Синий"
+"Blur"="Размытие"
+"Boolean"=""
+"Bounce"="Отражение света"
+"Box Mode [B]"=""
+"Box Select"=""
+"Bring to First"=""
+"Bring to Last"=""
+"Bring to First*"="First"
+"Bring to Last*"="Last"
+"Brush"=""
+"Brush Select"=""
+"Camera"="Камера"
+"Camera Center"=""
+"Camera Orientation"=""
+"Camera Slot"=""
+"Camera Zoom/Distance"=""
+"Capture Image [6] : Capture Window [CTRL+6]"="Снимок экрана [6] : Снимок окна [Ctrl + 6]"
+"Cell"=""
+"Cell Size"=""
+"Circle"=""
+"Clamp Energy"="Ограничение энергии лучей света"
+"Clay"=""
+"Clear"=""
+"Clear Notes"=""
+"Clear Voxels [Backspace/Delete]"=""
+"Close"=""
+"Cloud"=""
+"Cloud Material"=""
+"Color"=""
+"Color/Geometry Connectivity"=""
+"Cone"=""
+"Connected Region"=""
+"Console [F1] : History [UP/DOWN]"="Консоль [кнопка F1 на клавиатуре] : История консоли [кнопки Стрелка вверх, Стрелка вниз на клавиатуре]"
+"Constant Shading"=""
+"Convert Reference to Duplicate [CTRL+T]"=""
+"Copy"="Копировать"
+"Copy Color Code"=""
+"Copy Material [CTRL+C]"="Копировать материал [Ctrl + С]"
+"Copy Objects [CTRL+C]"=""
+"Copy Objects as Reference [CTRL+SHIFT+C]"=""
+"Copy Voxels [CTRL+C]"=""
+"Create Pattern from Selection"=""
+"Create Patterns from Selected Voxels/Objects"=""
+"Create Reference Patterns from Selected Objects"=""
+"Create Reference of Objects [SHIFT+Drag]"=""
+"Cube"=""
+"Cube/Sphere Shape"=""
+"Cubic"=""
+"Cut"="Вырезать"
+"Cut Objects as Reference [CTRL+X]"=""
+"Cut Voxels [CTRL+X]"=""
+"Cylinder"=""
+"Default Palette 0"="Стандартная палитра 0"
+"Default Palette 1"="Стандартная палитра 1"
+"Default Palette 2"="Стандартная палитра 2"
+"Default Palette 3"="Стандартная палитра 3"
+"Delete Objects [Backspace/Delete]"=""
+"Denoise"="Шумоподавление"
+"Density"=""
+"Diagonal"=""
+"Diffuse"="Диффуз"
+"Diffuse Depth"="Количество диффузных отражений лучей света"
+"Diffuse Material"="Диффузный материал"
+"Dilation"=""
+"Display"="Фон"
+"Display Background Color [CTRL+B]"="Рендер фона [Ctrl + И]"
+"Display Background Objects [CTRL+B]"=""
+"Display Edges [CTRL+E]"=""
+"Display Grids [CTRL+G]"=""
+"Display Ground [CTRL+U]"="Рендер основания сцены [Ctrl + Г]"
+"Display Shadow [CTRL+W]"=""
+"Display Wireframes [CTRL+M]"=""
+"Double Click to Switch Between Objects"=""
+"Double Size"=""
+"Drag to Modify Value"="Изменение значения [удерживая Левую кнопку мыши]"
+"Drag to Modify Value : Small Step [SHIFT]"="Изменение значения [удерживая Левую кнопку мыши] : Медленное изменение значения [удерживая: Shift + Левая кнопка мыши]"
+"Drag to Resize Image"="Изменение размера рендер изображения [удерживая Левую кнопку мыши]"
+"Duplicate Project [CTRL+SHIFT+P]"="Дублировать проект [Ctrl + Shift + З]"
+"Edge"=""
+"Edge Color"=""
+"Edge Width"=""
+"Edit"=""
+"Edit Layer Names"=""
+"Ellipsoid"=""
+"Emission"=""
+"Emission Properties"=""
+"Emissive Material"=""
+"Emissive Media"=""
+"Emit"=""
+"Energy"="Энергия"
+"Enter Group [TAB/Double Click]"=""
+"Erase"=""
+"Erase Voxels [R]"=""
+"Erosion"=""
+"Even"=""
+"Even Size"=""
+"Execute Shader"=""
+"Export"="Сохранить"
+"Export Args"=""
+"Export Objects in the Local Space"=""
+"Export Project"=""
+"Exposure"="Экспозиция"
+"Face"=""
+"Face Mode Option"=""
+"Face Mode [F] : Extrude [Drag]"=""
+"Fade"=""
+"Fade Background Objects"=""
+"Field of View"="Поле зрения (англ.: Field of View, FOV)"
+"File"="Файл"
+"Fill"=""
+"Fill Center"=""
+"Fill Voxels with Same Color [I]"=""
+"Film"="Плёнка"
+"Filter"="Фильтр"
+"Final Render"="Сохранить финальный рендер"
+"Fit Model Size"=""
+"Fix Focus Depth : Click Voxel to Set Focus"="Фиксированная глубина фокуса : Нажмите на любой элемент на экране для установки фокуса [Левая кнопка мыши]"
+"Flag Selected Voxel Colors : Add [+SHIFT] : Remove [+SHIFT+ALT]"=""
+"Flip"="Отразить"
+"Flip Model"=""
+"Flip Objects"=""
+"Flood"=""
+"Flood Fill All Invisible Space"=""
+"Fog"=""
+"Fog Color"=""
+"Fog Density"=""
+"Fog Phase"=""
+"Fractal"=""
+"Fractal Model with Patterns"=""
+"Frame"=""
+"Display Frame [CTRL+F]"=""
+"Frame Grid Spacing"=""
+"Frames"="Кадров"
+"Free*"="Перв"
+"Free Move [CTRL] : Duplicate [CTRL+SHIFT]"=""
+"Freestyle Camera : Move [WASDQE]"="Камера от первого лица : Вращение [удерживая Правую кнопку мыши] : Перемещение [удерживая Ц, Ф, Ы, В, Й, У кнопки клавиатуры]"
+"Full"=""
+"Full Volume [U]"=""
+"Gamma Correction"="Гамма-коррекция"
+"Geo"=""
+"Geometry"=""
+"Geometry Mode Option"=""
+"Geometry Mode [L]"=""
+"Glass"=""
+"Glass Material"=""
+"Green"="Зелёный"
+"Grid"=""
+"Grid Color"=""
+"Grid Spacing"=""
+"Grid Width"=""
+"Ground"="Основание сцены"
+"Ground Color"="Цвет основания сцены"
+"Group Objects [CTRL+R]"=""
+"HDPI"=""
+"HEX Values"=""
+"HSV Values"=""
+"Half Size"=""
+"Height"="Высота"
+"Hide"=""
+"Hide Objects [CTRL+H]"=""
+"High DPI"=""
+"Hint"=""
+"Hint : [HotKey]"="Подсказка [Кнопка или комбинация кнопок]"
+"Horizon"="Горизонт"
+"Horizontal Movement : Small Step [SHIFT]"=""
+"Horizontal Movement Step"=""
+"Hue"="Тон"
+"Hull"=""
+"IOR"=""
+"Image"="Изображение"
+"Image Based Lighting"="Освещение на основе изображения (англ.: Image-Based Lighting, IBL)"
+"Image Height"="Высота изображения в пикселях"
+"Image Size"="Разрешение рендер изображения (ширина и высота в пикселях)"
+"Image Width"="Ширина изображения в пикселях"
+"Import"="Загрузить"
+"Import Args"=""
+"Import Project [Drop]"=""
+"Info"="Информация"
+"GPU RAM"="GPU память"
+"GPU RAM Usage"="Использовано GPU памяти"
+"Intensity"="Яркость"
+"Intersection"=""
+"Intersection of Objects"=""
+"Inverse*"="Инвертация"
+"Inverse"=""
+"Inverse Color Selection"=""
+"Isometric*"="Изо"
+"Isometric Camera"="Изометрическая камера"
+"Isosurface"=""
+"Iteration"=""
+"Iteration Number"=""
+"Layer"="Слой"
+"Layer List : Menu [RButton]"="Список слоёв : Меню переименования выделенного слоя [Правая кнопка мыши]"
+"Rename"="Переименовать"
+"Rename Layer"="Имя слоя (английские буквы, цифры и знаки)"
+"Add Layer"="Добавить слой"
+"Delete Layer"="Удалить выделенный слой"
+"Move Layer Up"="Переместить выделенный слой вверх"
+"Move Layer Down"="Переместить выделенный слой вниз"
+"Ldr"=""
+"Leave Group [SHIFT+TAB/Double Click]"=""
+"Lego"=""
+"Lens"="Линза"
+"Light"="Освещение"
+"Light Emission"=""
+"Line"=""
+"Load Camera [8]"=""
+"Load HDR Image"="Открыть изображение формата HDR"
+"Local Space"=""
+"Loop"=""
+"Low Dynamic Range"=""
+"MC"=""
+"MIS-Scatter"=""
+"MIS-Reflect"="МВЗ отражений"
+"Marching Cubes"=""
+"Marquee"=""
+"Marquee Option"=""
+"Marquee Select [M] : Add [SHIFT] : Remove [SHIFT+ALT]"=""
+"Mask"=""
+"Mask Model with Patterns"=""
+"Mask Unused Voxel Colors"=""
+"Match Color"=""
+"Match Palette Color"=""
+"Material"="Материал"
+"Matter"="Материалы"
+"Maze"=""
+"Media"=""
+"Media Density"=""
+"Media Phase"=""
+"Media Properties"=""
+"Metal"="Металл"
+"Metal/Plastic Material"="Металл или пластик"
+"Metallic"="Металл"
+"Mie"="Ми"
+"Mie Color"="Ми цвет (англ.: Mie color)"
+"Mie Density"="Ми плотность (англ.: Mie density)"
+"Mie Phase"="Ми фаза (англ.: Mie phase)"
+"Mirror"=""
+"Mirror Mode"=""
+"Mix"="Микс"
+"Model"="Сцена"
+"Pattern List"=""
+"Project List"="Список проектов"
+"Model [F1]"=""
+"Modify"=""
+"All"="Все"
+"Modify All Materials"="Изменить все материалы"
+"Modify Selection Region"=""
+"Motion Blur"="Сила размытия движений"
+"Move"="Переместить"
+"Move Model"=""
+"Move Objects [Arrow/Page]"=""
+"Move Objects to Ground [G]"=""
+"Move/Loop [CTRL+LButton] : Normal Axis [SHIFT]"=""
+"Multiple Importance Sampling : Scatter"=""
+"Multiple Importance Sampling : Reflect"="Множественная выборка по значимости (МВЗ) отражённых лучей света"
+"Name"=""
+"New Object [CTRL+N]"=""
+"New Palette"=""
+"New Project [CTRL+P]"="Новый проект [Ctrl + З]"
+"Next Pattern [4]"=""
+"None"="Сброс"
+"Note"=""
+"Note [Tab/Up/Down]"=""
+"Number of Frames"="Количество кадров анимации"
+"Object Name"=""
+"Only Display Grid on Ground"=""
+"Only Export Selected Objects"=""
+"Only Import Color and Material for Selected Palette Region"=""
+"Open Palette [Drop]"=""
+"Open Project [CTRL+O]"="Открыть проект [Ctrl + Щ]"
+"Operand"=""
+"Order"=""
+"Order : Render Order"=""
+"Orthogonal*"="Орто"
+"Orthogonal Camera"="Ортогональная камера"
+"Outline"=""
+"Ozone"="Озон"
+"Ozone Color"="Цвет озона"
+"Ozone Density"="Плотность озона"
+"Paint"=""
+"Paint Voxels [G]"=""
+"Palette"="Палитра"
+"Palette Note"=""
+"Panorama*"="Пано"
+"Panorama Projection"="Панорамная проекция"
+"Paste"="Вставить"
+"Paste Color Code"=""
+"Paste Material [CTRL+V]"="Вставить материал [Ctrl + М]"
+"Paste Objects [CTRL+V]"=""
+"Paste Voxels [CTRL+V]"=""
+"Pattern"=""
+"Pattern Mode Option"=""
+"Pattern Mode [P] : Rotate [-/+/0/9] : Move [Dir/Page/Home]"=""
+"Pattern Preview"=""
+"Pattern [CTRL+ALT] : Rotate [-/+/0/9/Home]"=""
+"Perlin"=""
+"Perlin Noise"=""
+"Perspective*"="Перс"
+"Perspective Camera"="Перспективная камера : Сохранить текущую камеру [7] : Вернуться к ранее сохранённой камере [8]"
+"Perspective Projection"="Перспективная проекция"
+"Phase"=""
+"Photo"="Фото"
+"Pick Color from Screen [Drag]"=""
+"Pick Voxel Color [ALT+LButton]"=""
+"Pitch"="Наклон"
+"Pitch Angle of Sun Light"="Угол наклона солнечного света"
+"Pixelated"=""
+"Pixelated Illumination"=""
+"Power"=""
+"Previous Pattern [3]"=""
+"Project"="Проект"
+"Project Line"=""
+"Project Line on the Surface"=""
+"Pyramid"=""
+"RGB Values"=""
+"Radiant Flux"=""
+"Rand"=""
+"Random Voxel Colors"=""
+"Rayleigh"="Рэлей"
+"Rayleigh Color"="Рэлей цвет (англ.: Rayleigh color)"
+"Rayleigh Density"="Рэлей плотность (англ.: Rayleigh density)"
+"Recenter Camera [5] : Face View [CTRL+5]"="Центрировать камеру на ближайшие 45 градусов [5] : Центрировать камеру на ближайшую ось [Ctrl + 5]"
+"Rect Select"=""
+"Red"="Красный"
+"Redo Gizmo Transform"=""
+"Redo [CTRL+Y] : [CTRL+SHIFT+Z]"="Повторить отмененное действие [Ctrl + Shift + Я или Ctrl + Н]"
+"Ref"=""
+"Ref-D"=""
+"Reflection/Refraction Depth"="Количество зеркальных отражений и преломлений лучей света"
+"Refractive Index"="Индекс преломления света (англ.: Index of Refraction, IOR)"
+"Refresh Shader"=""
+"Region"=""
+"Region Option"=""
+"Region Remove"=""
+"Region Replace"=""
+"Region Select [N] : Add [SHIFT] : Remove [SHIFT+ALT]"=""
+"Remove All Invisible Voxels"=""
+"Remove Project to Trash"="Удалить проект в корзину"
+"Rename Project"=""
+"Render"="Рендер"
+"Render Setting"="Настройки рендера"
+"Render [F1]"=""
+"Replace"=""
+"Repeat"=""
+"Repeat Model : [Axis] [Scale]"=""
+"Replacement of Objects"=""
+"Reset Axis Mode"=""
+"Reset Mirror Mode"=""
+"Reset Rotation"="Сбросить вращение текущего локального пространства манипулятора для выделенных элементов"
+"Reset to Diffuse Material [CTRL+R]"="Восстановить диффузный материал [Ctrl + К]"
+"Resize Model"=""
+"Resize Model : Commit [Enter] : Cancel [Esc] : Two-sided [+SHIFT]"=""
+"Reverse*"="Rev"
+"Reverse Empty Space"=""
+"Roll"=""
+"Rotate 90"="Rotate 90°"
+"Rotate"="Повернуть"
+"Rotate : Commit [Enter] : Cancel [Esc] : Snap [SHIFT]"=""
+"Rotate Model 90 Degrees"=""
+"Rotate Model : [Axis] [Angle]"=""
+"Rotate Objects 90 Degrees [-/+]"=""
+"Rotate [RButton] : Move [MButton]"="Камера : Повернуть [Правая кнопка мыши] : Переместить [Средняя кнопка мыши] : Отдалить [Колёсико мыши]"
+"Rotation"="Поворот"
+"Roughness"="Шероховатость"
+"SG"="Стерео"
+"Same Palette Color"=""
+"Sample"="Качество"
+"Samples Per Pixel"="Количество сэмплов рендера для каждого пикселя"
+"Saturation"="Насыщенность"
+"Saturation and Value"="Насыщенность (по горизонтали) и яркость (по вертикали)"
+"Save Camera [7]"=""
+"Save Denoised Image"=""
+"Save Palette"=""
+"Save Project As [CTRL+SHIFT+S]"="Сохранить проект как [Ctrl + Shift + Ы]"
+"Save Project [CTRL+S]"="Сохранить проект [Ctrl + Ы]"
+"Save in the File"=""
+"Scale"="Масштабировать"
+"Scale : Commit [Enter] : Cancel [Esc] : Two-sided [SHIFT]"=""
+"Scale Model : [Axis] [Scale]"=""
+"Scatter"=""
+"Scatter Depth"=""
+"Scatter Media"=""
+"Scene Outline"=""
+"Select"="Выделение"
+"Select All [CTRL+A]"="Выделить все элементы [Ctrl + Ф]"
+"Select Inverse [CTRL+I]"="Инвертировать выделение [Ctrl + Ш]"
+"Select Material [ALT+LButton]"=""
+"Select None [CTRL+D]"="Сбросить выделение [Ctrl + В]"
+"Select Operand Objects for Subtraction/Replacement"=""
+"Selected Color"=""
+"Selection"=""
+"Selection Color"=""
+"Selection Only"=""
+"Set Focus Depth : Click Voxel to Set Focus"="Глубина фокуса : Нажмите на любой элемент на экране для установки фокуса [Левая кнопка мыши]"
+"Set Layer Visibility"=""
+"Set Layer for New Objects"=""
+"Set Layer for Selected Objects"=""
+"Shader"=""
+"Shader Arguments"=""
+"Shadow"="Тени"
+"Shape"=""
+"Shear"=""
+"Shear Model : [Axis] [Scale]"=""
+"Show"=""
+"Show All Options"=""
+"Show All Settings"="Показать все настройки"
+"Show Ambient Occlusion"=""
+"Show Brush Gizmo : Commit [Enter] : Cancel [Esc] : Two-sided [+SHIFT]"=""
+"Show Brushes"=""
+"Show Camera Control"=""
+"Show Camera Ruler : Drag on Ruler [LButton]"="Показать линейки камеры [удерживая Левую кнопку мыши на линейках]"
+"Show Camera Settings"="Показать настройки камеры"
+"Show Comparison"=""
+"Show Denoised Image [Right]"=""
+"Show Display Settings"="Показать настройки фона"
+"Show HEX Values"=""
+"Show IO Setting"=""
+"Show Image Settings"="Показать настройки изображения"
+"Show Layers"=""
+"Show Lighting Settings"="Показать настройки освещения"
+"Show Material Settings"="Показать настройки материалов"
+"Show Modification Options"=""
+"Show Objects [CTRL+SHIFT+H]"=""
+"Show Original Image [Left]"=""
+"Show Pattern List"=""
+"Show Project List"="Показать панель проекта"
+"Show SV Block"="Показать блок насыщенности и яркости"
+"Show Sampling Settings"="Показать настройки качества"
+"Show Scene Outline"="Показать панель сцены"
+"Show Shader List"=""
+"Show Shadow"="Рендер теней"
+"Show Sun Disk"="Рендер солнечного диска"
+"Show Transform Options"=""
+"Show Values"="Показать значения"
+"Show View Cube"="Показать куб камеры"
+"Size"="Масштаб"
+"Sky"="Небо"
+"Sky Color"=""
+"Sky Intensity"="Яркость неба"
+"Sort"=""
+"Sort Palette"=""
+"Space"=""
+"Sparse"=""
+"Sparse Volume for Large Space"=""
+"Specular"="Глянец"
+"Sphere"=""
+"Square"=""
+"Stereographics Projection"="Стереографическая проекция"
+"Still Image"="Одиночное изображение"
+"Stochastic"="Стохастический сэмплинг"
+"Stochastic Sampling Global Illumination"="Стохастический сэмплинг глобального освещения"
+"Stop"=""
+"Stop Rendering"=""
+"Stroke"="Элемент"
+"Stroke List"="Список элементов выделенного слоя"
+"Add Stroke"="Добавить элемент"
+"Delete Stroke"="Удалить выделенные элементы"
+"Move Stroke Up"="Переместить выделенные элементы вверх"
+"Move Stroke Down"="Переместить выделенные элементы вниз"
+"Subtract"=""
+"Subsurface Scattering Media"=""
+"Subtraction of Objects"=""
+"Sun"="Солнце"
+"Sun Area"="Размер солнца"
+"Sun Color"="Цвет солнечного света"
+"Sun Intensity"="Яркость солнечного света"
+"Surface"="Поверхность"
+"Surface Properties"="Свойства поверхности"
+"Surface Roughness"="Шероховатость поверхности"
+"Swap [CTRL] : Copy [CTRL+SHIFT] : Pick [ALT] : Gradient [CTRL+ALT]"="Поменять местами [удерж.: Ctrl + Левая кнопка мыши] : Клонировать [удерж.: Ctrl + Shift + Левая кнопка мыши] : Заменить [удерж.: Alt + Левая кнопка мыши] : Градиент [удерж.: Ctrl + Alt + Левая кнопка мыши]"
+"Switch between HSV/RGB Color Picker"="Переключение между ТНЯ (Тон, Насыщенность, Яркость) и КЗС (Красный, Зелёный, Синий) цветовыми моделями"
+"Switch between Model/World [TAB/Double Click]"=""
+"Texture"=""
+"Texture Model with Patterns"=""
+"Threshold"="Порог"
+"Toggle Bloom Calculation"="Включение вычисления бликов"
+"Toggle Note"=""
+"Toggle Panel"="Показать панель"
+"Toggle Progressive Rendering"="Включение / пауза постепенного улучшения рендер изображения"
+"Tool"=""
+"Transform"=""
+"Transform Option"=""
+"Translucent Shadow"="TR-Shadow"
+"Transparency"=""
+"Transparent"="Прозрачность"
+"Transparent Background"="Прозрачный фон"
+"Turntable"="Анимация"
+"Turntable Animation"="Изображения анимации вращения сцены"
+"Undo Gizmo Transform"=""
+"Undo [CTRL+Z]"="Отменить последнее действие [Ctrl + Я]"
+"Ungroup Objects [CTRL+SHIFT+R]"=""
+"Uniform Lighting"="Равномерное освещение"
+"Union"=""
+"Union of Objects [U]"=""
+"Use Palette Color"=""
+"Use Voxel Color"=""
+"Value"="Яркость"
+"Vertical Movement : Small Step [SHIFT]"=""
+"Vertical Movement Step"=""
+"Vignette"="Виньетка"
+"Vox"=""
+"Voxel"=""
+"Voxel Mode Option"=""
+"Voxel Mode [V] : Resize [-/+/CTRL+ALT+Drag]"=""
+"Voxel Scale"=""
+"Voxel Selection by Color : Add [+SHIFT] : Remove [+SHIFT+ALT]"=""
+"Voxel Shader List"=""
+"Voxel Shader Mode [C]"=""
+"Voxel Size : Resize [-/+/CTRL+ALT+Drag]"=""
+"Width"="Ширина"
+"Wrap Spacing"=""
+"Wrap [N] : Commit [Enter] : Cancel [Esc] : Two-sided [SHIFT]"=""
+"Yaw"="Поворот"
+"Yaw Angle of Sun Light"="Угол поворота солнечного света"
+"Zoom"=""
+"dH"=""
+"dV"=""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+vbox(def = 'bg2') ::
+{
+	hbox(size = '26' prev = '3' next = '3') ::
+	{
+		switch(class = 'view')(def = 'sw-view' style = '2' view = [['v_lower']] selected = '0')
+		(text = '^9660' text2 = '^9650' textFont = 'symbol' textSize = '11 11')
+		(size = '24' prev = '3' next = '3' margin = '0 0 2 2')
+		(hint = 'Показать палитру')
+
+		button(def = 'bn-ic' onClick = 'snap scene')
+		(text = '^8' textOffset = '0 1' textSize = '19 19')
+		(next = '3' size = '28')
+		(hint = 'Capture Image [6] : Capture Window [CTRL+6]')
+
+		textField(id = 'cmd' onEnter = '/' default = 'console' maxLength = '128' clear = '1' history = '1' border = '10' textSize = '7.5 7.5' align = '1')
+		(flex = '1' size = '90' next = '3' margin = '0 0 2 2')(radius = '3')
+		(hint = 'Console [F1] : History [UP/DOWN]')
+
+		//button(id = 's_color' onClick = 'sset s_color')(size = '20' margin = '0 0 4 4' next = '3' radius = '2' corner = '15')(hint = 'Select Stroke Color from the Palette')
+
+		opBox(id = 'cam_mode' value = '0' onClick = 'ui_set scene proj')(size = '130') ::
+		{
+			hbox ::
+			{
+				option(def = 'tab-cam' id = '0' text = 'Perspective*')(flex = '1' next = '2')(hint = 'Perspective Camera')
+				option(def = 'tab-cam' id = '3' text = 'Free*')(flex = '1' next = '2')(hint = 'Freestyle Camera : Move [WASDQE]')
+				option(def = 'tab-cam' id = '1' text = 'Orthogonal*')(flex = '1' next = '2')(hint = 'Orthogonal Camera')
+				option(def = 'tab-cam' id = '2' text = 'Isometric*' )(flex = '1' next = '2')(hint = 'Isometric Camera')
+			}
+		}
+
+		button(def = 'bn-ic' textColor	= '255 255 255 180' textColor-h	= '255 255 255 210' onClick = 'cam focus' text = '^15' delayed = '0')(size = '22' next = '3')(hint = 'Recenter Camera [5] : Face View [CTRL+5]')
+		switch(def = 'sw-cam' onClick = 'ui_set scene ruler' selected = '0')(text = '^14')(size = '22' next = '3')(hint = 'Show Camera Ruler : Drag on Ruler [LButton]')
+		switch(def = 'sw-cam' onClick = 'ui_set scene cube' selected = '1')(text = '^13')(size = '22' next = '3')(hint = 'Show View Cube')
+	}
+
+
+	vbox ::
+	{
+		layer(fitSize = '0 1' size = '80')(id = 'v_lower' hidden = '1') ::
+		{
+			hbox(id = 'l_pal') ::
+			{
+				vbox(size = '16') ::
+				{
+					button(def = 'bn-grey' bgColor = '0 0 0' onClick = 'i_pal open [[$/palette/pal0.png]]' text = '0' textFont = 'std')(flex = '1')(hint = 'Default Palette 0')
+					button(def = 'bn-grey' bgColor = '0 0 0' onClick = 'i_pal open [[$/palette/pal1.png]]' text = '1' textFont = 'std')(flex = '1')(hint = 'Default Palette 1')
+					button(def = 'bn-grey' bgColor = '0 0 0' onClick = 'i_pal open [[$/palette/pal2.png]]' text = '2' textFont = 'std')(flex = '1')(hint = 'Default Palette 2')
+					button(def = 'bn-grey' bgColor = '0 0 0' onClick = 'i_pal open [[$/palette/pal3.png]]' text = '3' textFont = 'std')(flex = '1')(corner = '8')(hint = 'Default Palette 3')
+				}
+
+				palette(id = 'pal' dim = '32 8' menu = 'menu_pal' onSelect = 'index' onMulti = 'pal_sel sel' onSwap = 'pal swap' onCopy = 'pal set' onGroup = 'pal grad')
+				(flex = '1' size = '80')
+				(hint = 'Swap [CTRL] : Copy [CTRL+SHIFT] : Pick [ALT] : Gradient [CTRL+ALT]')
+
+				//----------------
+				// Color
+				//----------------
+				vbox(size = '135') ::
+				{
+					rgbBox(id = 'pal_col_box' onChange = 'rgb' size = '100') ::
+					{
+						vbox ::
+						{
+							hbox(bgColor = '0 0 0' flex = '1') ::
+							{
+								group(size = '16')::
+								{
+									switch
+									(def = 'sw-col')
+									(onClick = [[ui_view 'p_l_hsv' 'p_l_rgb' 'p_s_hsv' 'p_s_rgb']])
+									(selected = '1')
+
+									(hint = 'Switch between HSV/RGB Color Picker')
+
+									vbox(id = 'p_l_hsv') ::
+									{
+										label(text = 'Т' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+										label(text = 'Н' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+										label(text = 'Я' textsize = '7 7' collid = '0'  flex = '1' next = '0')
+									}
+
+									vbox(id = 'p_l_rgb' hidden = '1') ::
+									{
+										label(text = 'К' textsize = '7 7' collid = '0' flex = '1' next = '1')
+										label(text = 'З' textsize = '7 7' collid = '0' flex = '1' next = '1')
+										label(text = 'С' textsize = '7 7' collid = '0' flex = '1' next = '0')
+									}
+								}
+
+								hbox(margin = '1 1 1 1' flex = '1') ::
+								{
+									hbox(id = 'p_s_hsv')(flex = '1') ::
+									{
+										vbox(id = 'p_hsv' hidden = '1' flex = '1') ::
+										{
+											slider(class = 'col')(id = '_hsq' range = '0 359' dir = '0' curColor = '0 0 0' size = '22')(hint = 'Hue')
+											layer(flex = '1' prev = '1')(hint = 'Saturation and Value') ::
+											{
+												slider2d(class = 'col')(id = '_sv' range = '0 255' curColor = '128 128 128')
+											}
+										}
+										vbox(id = 'p_hdq')(flex = '1') ::
+										{
+											slider(class = 'col')(id = '_h' range = '0 359')(flex = '1' next = '1')(hint = 'Тон')
+											slider(class = 'col')(id = '_s' range = '0 255')(flex = '1' next = '1')(hint = 'Насыщенность')
+											slider(class = 'col')(id = '_v' range = '0 255')(flex = '1')(hint = 'Яркость')
+										}
+
+										vbox(id = 'p_t_hsv' size = '24' hidden = '1')  ::
+										{
+											hbox(flex = '1' next = '1')(hint = 'Hue') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_h')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 359' step = '1' space = '2')(size = '6')
+											}
+											hbox(flex = '1' next = '1')(hint = 'Saturation') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_s')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 255' step = '1' space = '2')(size = '6')
+											}
+											hbox(flex = '1')(hint = 'Value') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_v')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 255' step = '1' space = '2')(size = '6')
+											}
+										}
+									}
+
+									hbox(id = 'p_s_rgb' hidden = '1')(flex = '1') ::
+									{
+										vbox(id = 'p_hdq')(flex = '1') ::
+										{
+											slider(class = 'col')(id = '_r' range = '0 255')(flex = '1' next = '1')(hint = 'Красный')
+											slider(class = 'col')(id = '_g' range = '0 255')(flex = '1' next = '1')(hint = 'Зелёный')
+											slider(class = 'col')(id = '_b' range = '0 255')(flex = '1')(hint = 'Синий')
+										}
+										vbox(id = 'p_t_rgb' size = '24' hidden = '1') ::
+										{
+											hbox(flex = '1' next = '1')(hint = 'Red') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_r')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 255' step = '1' space = '2')(size = '6')
+											}
+											hbox(flex = '1' next = '1')(hint = 'Green') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_g')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 255' step = '1' space = '2')(size = '6')
+											}
+											hbox(flex = '1')(hint = 'Blue') ::
+											{
+												textfield(class = 'col' def = 'tf-col')(id = '_b')(flex = '1' size = '24')
+												resizer(class = 'int')(range = '0 255' step = '1' space = '2')(size = '6')
+											}
+										}
+									}
+
+									vbox(size = '16') ::
+									{
+										switch(def = 'sw-menu' text = '^x2261'  textFont = 'symbol' textSize = '12 18' onClick = [[ui_view 'p_t_hsv' 'p_t_rgb']])(flex = '1' next = '1')(hint = 'Show Values')
+										sp(flex = '1')
+										switch(def = 'sw-menu' text = '^x25cf' textFont = 'symbol' onClick = [[ui_view 'p_hdq' 'p_hsv']])(flex = '1' prev = '1')(hint = 'Show SV Block')
+									}
+								}
+							}
+
+							/*hbox(size = '24' prev = '3' next = '3')(bgColor = '10 10 10' corner = '15' radius = '3') ::
+							{
+								colpick(id = 'pal_col' menu = '' onChange = 'rgb' border = '0')(size = '22' corner = '15' radius = '2' margin = '3 0 3 3')(hint = 'Pick Color from Screen [Drag]')
+
+								group(id = 'p_rgb' flex = '1') ::
+								{
+									textfield(class = 'col' def = 'tf-col' id = '_rgb' maxlength = '16' textSize = '6.5 6.5')(hint = 'RGB Values')
+								}
+								group(id = 'p_hex' flex = '1' hidden = '1') ::
+								{
+									textfield(class = 'col' def = 'tf-col' id = '_hex' maxlength = '16' textSize = '6.5 6.5')(hint = 'HEX Values')
+								}
+
+								switch(def = 'sw-menu' text = '^8644' textFont = 'symbol' textSize = '13 13' onClick = [[ui_view 'p_rgb' 'p_hex']])(size = '12' next = '4')(hint = 'Show HEX Values')
+							}	*/
+						}
+					}
+				}
+
+			}
+			//ui = 'cam.ui'
+		}
+
+		hint(size = '24')(hint = 'Hint : [HotKey]')
+	}
+}
