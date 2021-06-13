@@ -1,0 +1,115 @@
+vbox(margin = '6 6 0 0') ::
+{
+	vbox(id = 'menu_graph' flex = '1' hidden = '0') ::
+	{
+		hbox(size = '30') ::
+		{
+			switch(class = 'panel')(def='h2' path = '1 1' selected = '1' text = 'Layer' flex = '1')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'onew' id = '0' textFont = 'icon'   text = '^10'    textSize = '10 10')(margin = '0 0 6 6' size = '18' corner = '5' next = '0')(hint = 'Add Layer')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'odel' id = '1' textFont = 'icon'   text = '^11'    textSize = '10 10')(margin = '0 0 6 6' size = '18' next = '1')(hint = 'Delete Layer')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'oprev' id = '0' textFont = 'symbol' text = '^X2191' textSize = '10 10' repeated = '1')(margin = '0 0 6 6' size = '18' next = '0')(hint = 'Move Layer Up')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'onext' id = '1' textFont = 'symbol' text = '^X2193' textSize = '10 10' repeated = '1')(margin = '0 0 6 6' size = '18' corner = '10')(hint = 'Move Layer Down')
+		}
+
+		layer(resize = '4' size = '180' max = '500' flex = '-1') ::
+		{
+			vbox ::
+			{
+				layer(def = 'layer-light' flex = '1') ::
+				{
+					objectList(def = 'fileList' id = 'obj_list' margin = '0 0 -6 0')(menu = 'menu_obj')(hint = 'Layer List : Menu [RButton]')
+				}
+			}
+		}
+
+		hbox(size = '30') ::
+		{
+			switch(class = 'panel')(def='h2' path = '1 1' selected = '1' text = 'Stroke' flex = '1')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'snew' textFont = 'icon'   text = '^10'    textSize = '10 10')(margin = '0 0 6 6' size = '18' corner = '5' next = '0')(hint = 'Add Stroke')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'sdel' textFont = 'icon'   text = '^11'    textSize = '10 10')(margin = '0 0 6 6' size = '18' next = '1')(hint = 'Delete Stroke')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'sprev' textFont = 'symbol' text = '^X2191' textSize = '10 10' repeated = '1')(margin = '0 0 6 6' size = '18' next = '0')(hint = 'Move Stroke Up')
+			button(class = 'cmd')(def = 'bn-grey' onClick = 'snext' textFont = 'symbol' text = '^X2193' textSize = '10 10' repeated = '1')(margin = '0 0 6 6' size = '18' corner = '10')(hint = 'Move Stroke Down')
+		}
+		layer(def = 'layer-light')(flex = '1' next = '6') ::
+		{
+			graph(def = 'fileList' id = 'stroke_list')(hint = 'Stroke List')
+		}
+	}
+
+	vbox(id = 'menu_model' hidden = '1')(flex = '1') ::
+	{
+		switch(class = 'panel')(def='h2' selected = '1' text = 'Project' size = '30')
+
+		layer(def = 'layer-light')(flex = '1') ::
+		{
+			list(def = 'fileList' id = 'file' root = [[$/csg]] ext = "mcsg" onSelect = 'open' )(hint = 'Project List')
+		}
+	}
+
+	vbox(id = 'menu_info' hidden = '1')(flex = '1') ::
+	{
+		vbox(margin = '0 6 0 0') ::
+		{
+			switch(class = 'panel')(def='h2' selected = '1' text = 'Info')(size = '30')
+
+			hbox(size = '24')(hint = 'GPU RAM Usage') ::
+			{
+				label(def = 'h3' text = 'GPU RAM')(flex = '1')
+				label(id = 'gpu_ram' align = '3' textSize = '7 7' textColor = '255 255 255 60' size = '35')
+			}
+		}
+	}
+
+	vbox(id = 'menu_io' hidden = '1')(flex = '1') ::
+	{
+		vbox(margin = '0 6 0 0' clip = '0' next = '3') ::
+		{
+			hbox(clip = '0' size = '30' margin = '0 -2 0 0') ::
+			{
+				switch(class = 'panel')(def='h2' selected = '1' path = '1 1' text = 'File')( flex = '1')
+			}
+
+			vbox ::
+			{
+				hbox(size = '24')(hint = 'Palette') ::
+				{
+					label(def = 'h3' text = 'Palette')(flex = '1')
+					button(def = 'bn-ic-t'  onClick = 'i_pal sel' text = '^33' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Import')
+					button(def = 'bn-ic-t'  onClick = 'o_pal'     text = '^34' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Export')
+				//	switch(def = 'sw-check' onClick = 'set option_save pal' selected = '1')(prev = '3' size = '16')(hint = 'Save in the File')
+				}
+				hbox(size = '24')(hint = 'Material') ::
+				{
+					label(def = 'h3' text = 'Material')(flex = '1')
+					button(def = 'bn-ic-t'  onClick = 'i_comp mtl' text = '^33' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Import')
+					button(def = 'bn-ic-t'  onClick = 'o_comp mtl' text = '^34' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Export')
+				//	switch(def = 'sw-check' onClick = 'set option_save mtl' selected = '1')(prev = '3' size = '16')(hint = 'Save in the File')
+				}
+				hbox(size = '24')(hint = 'Render Setting') ::
+				{
+					label(def = 'h3' text = 'Render')(flex = '1')
+					button(def = 'bn-ic-t'  onClick = 'i_comp render' text = '^33' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Import')
+					button(def = 'bn-ic-t'  onClick = 'o_comp render' text = '^34' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Export')
+				//	switch(def = 'sw-check' onClick = 'set option_save render' selected = '1')(prev = '3' size = '16')(hint = 'Save in the File')
+				}
+				hbox(size = '24')(hint = 'Camera') ::
+				{
+					label(def = 'h3' text = 'Camera')(flex = '1')
+					button(def = 'bn-ic-t'  onClick = 'i_comp camera' text = '^33' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Import')
+					button(def = 'bn-ic-t'  onClick = 'o_comp camera' text = '^34' textSize = '14 14')(size = '20' margin = '0 0 2 2')(hint = 'Export')
+				//	switch(def = 'sw-check' onClick = 'set option_save camera' selected = '1')(prev = '3' size = '16')(hint = 'Save in the File')
+				}
+			}
+
+			hbox(clip = '0' size = '30' margin = '0 -2 0 0') ::
+			{
+				switch(class = 'panel')(def='h2' selected = '1' path = '1 1' text = 'Объект')(flex = '1')
+			}
+
+			vbox(size = '22') ::
+			{
+				button(def = 'bn-grey' onClick = 'o' text = 'Export' radius = '2' corner = '5' flex = '1' margin = '10 10 0 0')(hint = 'Сохранить объект')
+			}
+		}
+	}
+}

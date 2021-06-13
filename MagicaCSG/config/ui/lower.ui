@@ -16,7 +16,7 @@ vbox(def = 'bg2') ::
 		(flex = '1' size = '90' next = '3' margin = '0 0 2 2')(radius = '3')
 		(hint = 'Console [F1] : History [UP/DOWN]')
 
-		//button(id = 's_color' onClick = 'sset s_color')(size = '20' margin = '0 0 4 4' next = '3' radius = '2' corner = '15')(hint = 'Select Stroke Color from the Palette')
+		button(def = 'bn-ic' textFont = 'icon' text = '^106' textAlign = '2' textSize = '16 16' onClick = 'sset s_pal' size = '28')(hint = 'Скопировать выбранный цвет палитры в текущий цвет и в цвет выделенных элементов [З]')
 
 		opBox(id = 'cam_mode' value = '0' onClick = 'ui_set scene proj')(size = '130') ::
 		{

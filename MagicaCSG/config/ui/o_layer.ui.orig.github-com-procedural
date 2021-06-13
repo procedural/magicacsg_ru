@@ -82,7 +82,6 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 		{
 			label(def = 'h3' text = 'Color')(size = '34')
 			button(def = 'bn-ic' textFont = 'icon' text = '^12'  textAlign = '2' textSize = '13 13' onClick = 'sel color'  size = '20' margin = '0 0 6 6')(hint = 'Select Strokes with Same Color [C]')
-			button(def = 'bn-ic' textFont = 'icon' text = '^106' textAlign = '2' textSize = '13 13' onClick = 'sset s_pal' size = '20' margin = '0 0 6 6')(hint = 'Pick Stroke Color from Palette [P]')
 			sp(flex = '1')
 			colpick(id = 's_color' onChange = 'sset s_color')(prev = '9' size = '16' margin = '0 0 10 10')(hint = 'Change Stroke Color : Pick Color from Other Strokes [ALT+Click]')
 		}

@@ -1,2 +1,3 @@
+526cf03bc28f8bf176cca4ebfb3e67a06decfdcd0ac0ddaf167edf8886d8ed40 MagicaCSG-0.0.1.zip (13 Jun 2021)
 144eb353c65807019297aca7e64d49a3187c79bf9aaf8332f23ddd9468d04dd5 MagicaCSG.0.0.0.zip (24 May 2021)
 70bceb37ac89a9a8db14e7e75e0a82fcb47bdfa41df5dd306b432d796cb1b85f MagicaCSG.0.0.0.zip (21 May 2021)
