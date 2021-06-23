@@ -27,8 +27,8 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 				{
 					hbox::
 					{
-						option(def = 'tab-panel-text' id = '0' text = 'L'		textSize = '10 10')(flex = '1' )(hint = 'Show Original Image [Left]')
-						option(def = 'tab-panel-text' id = '1' text = 'R'		textSize = '10 10')(flex = '1' )(hint = 'Show Denoised Image [Right]')
+						option(def = 'tab-panel-text' id = '0' text = 'Л'		textSize = '10 10')(flex = '1' )(hint = 'Show Original Image [Left]')
+						option(def = 'tab-panel-text' id = '1' text = 'П'		textSize = '10 10')(flex = '1' )(hint = 'Show Denoised Image [Right]')
 						option(def = 'tab-panel-text' id = '2' text = '^8644'	textSize = '18 18' textFont = 'symbol')(flex = '1' )(hint = 'Show Comparison')
 					}
 				}
