@@ -9,7 +9,7 @@
 
 Требования:
 
-* MagicaCSG версии 0.0.1 ([MagicaCSG-0.0.1.zip](https://github.com/ephtracy/ephtracy.github.io/releases/download/c0.0.0/MagicaCSG-0.0.1.zip))
+* MagicaCSG версии 0.0.2 ([MagicaCSG-0.0.2.zip](https://github.com/ephtracy/ephtracy.github.io/releases/download/c0.0.0/MagicaCSG-0.0.2.zip))
 
 Дополнительные ссылки:
 

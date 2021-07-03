@@ -84,7 +84,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 		{
 			hbox(size = '22' next = '1') ::
 			{
-				label(def = 'h3' text = 'S')(size = '14')
+				label(def = 'h3' text = 'М')(size = '14')
 				textfield(onEnter = 'scale x' text = '2' flex = '1')
 				button(def = 'bn-left' onClick = 'scale x 0.5' size = '12' corner = '5' next = '1')
 				button(def = 'bn-right'onClick = 'scale x 2.0' size = '12' corner = '10')
@@ -160,7 +160,7 @@ vbox(margin = '6 6 0 0' clip = '0') ::
 			button(def = 'bn-grey' onClick = 'flip x' text = 'X' radius = '2' corner = '5'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip y' text = 'Y' radius = '2' corner = '0'  flex = '1' next = '1')
 			button(def = 'bn-grey' onClick = 'flip z' text = 'Z' radius = '2' corner = '0'  flex = '1' next = '1')
-			button(def = 'bn-grey' onClick = 'flip m' text = 'M' radius = '2' corner = '10' flex = '1')(hint = 'Mirror Strokes') 
+			button(def = 'bn-grey' onClick = 'flip m' text = 'О' radius = '2' corner = '10' flex = '1')(hint = 'Mirror Strokes') 
 		}
 	}
 }

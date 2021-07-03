@@ -6,10 +6,10 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 
 		hbox(size = '24')::
 		{
-			switch(def = 'op-blue' id = 's_half_x'	onClick = 'sset s_half 0' textFont = 'std' textColor-s = '235 195 60' text = 'Hx' textSize = '6 6')(flex = '1')(hint = 'Half X')
-			switch(def = 'op-blue' id = 's_half_y'	onClick = 'sset s_half 1' textFont = 'std' textColor-s = '235 195 60' text = 'Hy' textSize = '6 6')(flex = '1')(hint = 'Half Y')
-			switch(def = 'op-blue' id = 's_half_z'	onClick = 'sset s_half 2' textFont = 'std' textColor-s = '235 195 60' text = 'Hz' textSize = '6 6')(flex = '1')(hint = 'Half Z')
-			switch(def = 'op-blue' id = 's_mx'	    onClick = 'sset s_mx'     textFont = 'std' textColor-s = '235 195 60' text = 'M'  textSize = '6 6')(flex = '1')(hint = 'Mirror X')
+			switch(def = 'op-blue' id = 's_half_x'	onClick = 'sset s_half 0' textFont = 'std' textColor-s = '235 195 60' text = 'Пx' textSize = '6 6')(flex = '1')(hint = 'Half X')
+			switch(def = 'op-blue' id = 's_half_y'	onClick = 'sset s_half 1' textFont = 'std' textColor-s = '235 195 60' text = 'Пy' textSize = '6 6')(flex = '1')(hint = 'Half Y')
+			switch(def = 'op-blue' id = 's_half_z'	onClick = 'sset s_half 2' textFont = 'std' textColor-s = '235 195 60' text = 'Пz' textSize = '6 6')(flex = '1')(hint = 'Half Z')
+			switch(def = 'op-blue' id = 's_mx'	    onClick = 'sset s_mx'     textFont = 'std' textColor-s = '235 195 60' text = 'О'  textSize = '6 6')(flex = '1')(hint = 'Mirror X')
 		}
 		
 		sp(def = 'bar-h' size = '3')
@@ -47,10 +47,10 @@ vbox(id = 'menu_layer' clip = '0' margin = '6 6 0 0') ::
 			{
 				hbox(size = '14' prev = '3') ::
 				{
-					label(def = 'op-blue' id = '0'	text = 'uni' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Union Operation')
-					label(def = 'op-blue' id = '1'	text = 'sub' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Subtract Operation')
-					label(def = 'op-blue' id = '2'	text = 'int' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Intersect Operation')
-					label(def = 'op-blue' id = '3'	text = 'rep' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Replace Operation')
+					label(def = 'op-blue' id = '0'	text = 'объе' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Union Operation')
+					label(def = 'op-blue' id = '1'	text = 'вычи' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Subtract Operation')
+					label(def = 'op-blue' id = '2'	text = 'пере' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Intersect Operation')
+					label(def = 'op-blue' id = '3'	text = 'закр' textFont = 'std' textSize = '6 6' textColor = '255 255 255 60')(flex = '1')(hint = 'Replace Operation')
 				}
 				hbox(size = '28') ::
 				{

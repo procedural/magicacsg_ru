@@ -75,16 +75,16 @@ vbox(def = 'bg2') ::
 
 									vbox(id = 'p_l_hsv') ::
 									{
-										label(text = 'H' textsize = '7 7' collid = '0'  flex = '1' next = '1')
-										label(text = 'S' textsize = '7 7' collid = '0'  flex = '1' next = '1')
-										label(text = 'V' textsize = '7 7' collid = '0'  flex = '1' next = '0')
+										label(text = 'Т' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+										label(text = 'Н' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+										label(text = 'Я' textsize = '7 7' collid = '0'  flex = '1' next = '0')
 									}
 
 									vbox(id = 'p_l_rgb' hidden = '1') ::
 									{
-										label(text = 'R' textsize = '7 7' collid = '0' flex = '1' next = '1')
-										label(text = 'G' textsize = '7 7' collid = '0' flex = '1' next = '1')
-										label(text = 'B' textsize = '7 7' collid = '0' flex = '1' next = '0')
+										label(text = 'К' textsize = '7 7' collid = '0' flex = '1' next = '1')
+										label(text = 'З' textsize = '7 7' collid = '0' flex = '1' next = '1')
+										label(text = 'С' textsize = '7 7' collid = '0' flex = '1' next = '0')
 									}
 								}
 						

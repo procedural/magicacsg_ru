@@ -27,8 +27,8 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 				{
 					hbox::
 					{
-						option(def = 'tab-panel-text' id = '0' text = 'L'		textSize = '10 10')(flex = '1' )(hint = 'Show Original Image [Left]')
-						option(def = 'tab-panel-text' id = '1' text = 'R'		textSize = '10 10')(flex = '1' )(hint = 'Show Denoised Image [Right]')
+						option(def = 'tab-panel-text' id = '0' text = 'Л'		textSize = '10 10')(flex = '1' )(hint = 'Show Original Image [Left]')
+						option(def = 'tab-panel-text' id = '1' text = 'П'		textSize = '10 10')(flex = '1' )(hint = 'Show Denoised Image [Right]')
 						option(def = 'tab-panel-text' id = '2' text = '^8644'	textSize = '18 18' textFont = 'symbol')(flex = '1' )(hint = 'Show Comparison')
 					}
 				}
@@ -132,16 +132,16 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 
 							vbox(id = 'm_l_hsv') ::
 							{
-								label(text = 'H' textsize = '7 7' collid = '0'  flex = '1' next = '1')
-								label(text = 'S' textsize = '7 7' collid = '0'  flex = '1' next = '1')
-								label(text = 'V' textsize = '7 7' collid = '0'  flex = '1' next = '0')
+								label(text = 'Т' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+								label(text = 'Н' textsize = '7 7' collid = '0'  flex = '1' next = '1')
+								label(text = 'Я' textsize = '7 7' collid = '0'  flex = '1' next = '0')
 							}
 
 							vbox(id = 'm_l_rgb' hidden = '1') ::
 							{
-								label(text = 'R' textsize = '7 7' collid = '0' flex = '1' next = '1')
-								label(text = 'G' textsize = '7 7' collid = '0' flex = '1' next = '1')
-								label(text = 'B' textsize = '7 7' collid = '0' flex = '1' next = '0')
+								label(text = 'К' textsize = '7 7' collid = '0' flex = '1' next = '1')
+								label(text = 'З' textsize = '7 7' collid = '0' flex = '1' next = '1')
+								label(text = 'С' textsize = '7 7' collid = '0' flex = '1' next = '0')
 							}
 						}
 
@@ -247,9 +247,9 @@ layer(id = 'l_root' minSize = '100 100' fitSize = '1 1' def = 'bg0') ::
 									hbox(def = 'outline-i') ::
 									{
 										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_model']] text = '^6' onSelect = 'ui_set r_title3 text *Project')(flex = '1')(hint = 'Show Project List')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_graph']] text = '^104' textSize = '13 13' onSelect = 'ui_set r_title3 text Scene')(flex = '1')(hint = 'Show Scene Outline')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text IO')(flex = '1')(hint = 'Show IO')
-										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text Info')(flex = '1')(hint = 'Show Info')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_graph']] text = '^104' textSize = '13 13' onSelect = 'ui_set r_title3 text *Scene')(flex = '1')(hint = 'Show Scene Outline')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_io']]    text = '^27' textSize = '13 13' onSelect = 'ui_set r_title3 text *IO')(flex = '1')(hint = 'Show IO')
+										option(class = 'cmd')(def = 'tab-panel' select_value = [['menu_info']] text = '^60' textSize = '13 13' onSelect = 'ui_set r_title3 text *Info')(flex = '1')(hint = 'Show Info')
 									}					
 								}
 							}
