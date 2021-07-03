@@ -13,6 +13,8 @@
 
 Дополнительные ссылки:
 
+* https://twitter.com/ephtracy/status/1410035026247491585
+* https://twitter.com/ephtracy/status/1403828258752323586
 * https://twitter.com/ephtracy/status/1395589747259674624
 * https://twitter.com/ephtracy/status/1395752051158798337
 * https://github.com/procedural/magicacsg_tips
